@@ -69,6 +69,7 @@ marketing/
 **🚨 Ação necessária:** Atualizar material de propostas removendo 23 empresas que saíram da OSP.
 
 **Documentação:**
+- 📊 [Resumo Executivo](docs/materiais-corporativos/RESUMO-EXECUTIVO.md) - Visão geral do projeto
 - 📋 [Checklist Rápido](docs/materiais-corporativos/CHECKLIST.md) - Ações imediatas
 - 📚 [Guia de Atualização](docs/materiais-corporativos/guia-atualizacao-proposta.md) - Processo completo
 - 🏢 [Gestão de Logos](docs/materiais-corporativos/gestao-logos-clientes.md) - Tracking e organização
