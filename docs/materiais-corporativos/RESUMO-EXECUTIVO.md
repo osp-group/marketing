@@ -54,7 +54,7 @@ marketing/
 
 ## 🚨 Empresas para Remover (23 total)
 
-1. TNK Transporte (sub Alpi Distribuidora)
+1. TNK Transporte (substituído por Alpi Distribuidora)
 2. Quality Machine
 3. Borabela
 4. Medvacca

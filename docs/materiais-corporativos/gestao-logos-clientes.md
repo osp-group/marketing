@@ -8,7 +8,7 @@ Este documento gerencia os logos de clientes utilizados no material de propostas
 
 As seguintes empresas não são mais clientes da OSP e seus logos devem ser removidos de todo material corporativo:
 
-1. **TNK Transporte** - substituída por Alpi Distribuidora
+1. **TNK Transporte** - substituído por Alpi Distribuidora
 2. **Quality Machine**
 3. **Borabela**
 4. **Medvacca**

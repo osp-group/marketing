@@ -9,7 +9,7 @@ Atualizar material de propostas removendo logos de ex-clientes e adicionando nov
 
 **ATENÇÃO:** Estas empresas saíram da OSP e devem ser removidas de TODOS os materiais:
 
-- [ ] TNK Transporte (sub Alpi Distribuidora)
+- [ ] TNK Transporte (substituído por Alpi Distribuidora)
 - [ ] Quality Machine
 - [ ] Borabela
 - [ ] Medvacca
