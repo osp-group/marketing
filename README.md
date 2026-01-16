@@ -37,22 +37,48 @@ Todas as tarefas são gerenciadas no Kanban board:
 | `ads` | 🟠 | Campanhas pagas |
 | `dev` | 🔵 | Desenvolvimento/Tech |
 
-## 📁 Estrutura (Planejada)
+## 📁 Estrutura
 
 ```
 marketing/
 ├── docs/
-│   ├── onboarding/          # Documentação de onboarding
-│   ├── processos/           # Processos de marketing
-│   └── templates/           # Templates de conteúdo
+│   ├── materiais-corporativos/    # Gestão de materiais corporativos
+│   │   ├── CHECKLIST.md           # Checklist rápido de atualização
+│   │   ├── gestao-logos-clientes.md    # Gestão de logos
+│   │   └── guia-atualizacao-proposta.md # Guia de atualização
+│   ├── onboarding/                # Documentação de onboarding
+│   ├── processos/                 # Processos de marketing
+│   └── templates/                 # Templates de conteúdo
 ├── content/
 │   ├── blog/                # Artigos e posts
 │   ├── social/              # Conteúdo para redes sociais
 │   └── campaigns/           # Material de campanhas
 └── assets/
+    ├── logos/
+    │   └── clientes/        # Logos de clientes
+    │       ├── ativos/      # Clientes atuais
+    │       └── inativos/    # Ex-clientes (arquivo)
     ├── images/              # Imagens e gráficos
     └── videos/              # Vídeos e thumbnails
 ```
+
+## 📝 Materiais Corporativos
+
+### Atualização de Logos de Clientes (Janeiro 2026)
+
+**🚨 Ação necessária:** Atualizar material de propostas removendo 23 empresas que saíram da OSP.
+
+**Documentação:**
+- 📋 [Checklist Rápido](docs/materiais-corporativos/CHECKLIST.md) - Ações imediatas
+- 📚 [Guia de Atualização](docs/materiais-corporativos/guia-atualizacao-proposta.md) - Processo completo
+- 🏢 [Gestão de Logos](docs/materiais-corporativos/gestao-logos-clientes.md) - Tracking e organização
+
+**Passos:**
+1. Remover logos das 23 empresas ex-clientes
+2. Fazer levantamento de novos clientes relevantes
+3. Coletar logos em alta qualidade
+4. Selecionar 10-15 logos para material
+5. Atualizar templates de proposta
 
 ## 🔗 Links Úteis
 
