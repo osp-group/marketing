@@ -46,26 +46,40 @@ export const TECHNOLOGIES: Technology[] = [
   { name: 'Bradial telecom', description: 'Sistema de telefonia', logo: 'https://picsum.photos/100/100?random=10' }
 ];
 
+// Logos de clientes (12 itens) usando assets locais
+export const CLIENT_LOGOS: string[] = [
+  '/assets/logo/tech/google-workspace.webp',
+  '/assets/logo/tech/gestta.webp',
+  '/assets/logo/tech/onvio.webp',
+  '/assets/logo/tech/bradial-telecom.webp',
+  '/assets/logo/Logo_OSP_azul.png',
+  '/assets/logo/OSP_Logo_white (1).png',
+  '/assets/logo/Logo_OSP_azul copy.png',
+  '/assets/logo/OSP_Logo_white (1) copy.png',
+  '/assets/logo/tech/google-workspace.png',
+  '/assets/logo/tech/gestta.png',
+  '/assets/logo/tech/onvio.png',
+  '/assets/logo/tech/bradial-telecom.png'
+];
+
 export const PARTNERS: Employee[] = [
-  {
-    name: 'Jonas Marinho',
-    role: 'CEO',
-    description: 'Sempre em busca de inovações e melhorias para os negócios, Jonas lidera o acompanhamento estratégico do time de coordenadores.',
-    image: 'https://picsum.photos/300/300?random=1',
-    email: 'jonas@osp.com.br',
-    phone: '(19) 99595-6709'
-  },
   {
     name: 'Gervásio Souza',
     role: 'Sócio Fundador',
     description: 'Sócio-fundador com mais de 46 anos de experiência em contabilidade estratégica.',
-    image: 'https://picsum.photos/300/300?random=2'
+    image: '/assets/partners/Gervasio_Socio_Fundador.jpeg'
   },
   {
     name: 'Guilherme Pagotto',
     role: 'Sócio Empreendedor',
     description: 'Diretor Executivo da OSP. Advogado e contador com mais de 20 anos de experiência.',
-    image: 'https://picsum.photos/300/300?random=3'
+    image: '/assets/partners/Guilherme_Pagotto_Socio_Vendedor.jpeg'
+  },
+  {
+    name: 'Jonas Marinho',
+    role: 'CEO',
+    description: 'Diretor Executivo e liderança estratégica da OSP.',
+    image: '/assets/partners/Jonas_CEO.jpeg'
   }
 ];
 
@@ -75,8 +89,8 @@ export const DEPARTMENTS: Department[] = [
     color: 'blue',
     manager: {
       name: 'Jéssica Gonçalves',
-      role: 'Gerente Contábil',
-      image: 'https://picsum.photos/300/300?random=4',
+      role: 'Gestora Contábil',
+      image: '/team/DPT_Contabil/Jessica_DPT_Contabil.jpeg',
       email: 'jessica@osp.com.br'
     },
     members: [
@@ -86,27 +100,12 @@ export const DEPARTMENTS: Department[] = [
     ]
   },
   {
-    name: 'Pessoal',
-    color: 'emerald',
-    manager: {
-      name: 'Raquel Lisboa',
-      role: 'Gerente de DP',
-      image: 'https://picsum.photos/300/300?random=5',
-      email: 'raquel@osp.com.br'
-    },
-    members: [
-      { name: 'Time de Analistas', role: 'Folha e Encargos' },
-      { name: 'Time de Assistentes', role: 'Rotinas Trabalhistas' },
-      { name: 'Benefícios', role: 'Gestão de Vantagens' }
-    ]
-  },
-  {
     name: 'Fiscal e Tributário',
     color: 'indigo',
     manager: {
       name: 'Rafaela Oliveira',
-      role: 'Gerente Fiscal',
-      image: 'https://picsum.photos/300/300?random=6',
+      role: 'Gestora Fiscal',
+      image: '/team/DPT_Fiscal/Rafaela_DPT_Fiscal.png',
       email: 'rafaela@osp.com.br'
     },
     members: [
@@ -116,18 +115,89 @@ export const DEPARTMENTS: Department[] = [
     ]
   },
   {
+    name: 'Pessoal',
+    color: 'emerald',
+    manager: {
+      name: 'Raquel Lisboa',
+      role: 'Gestora de DP',
+      image: '/team/DPT_Pessoal/Raquel_DPT_Pessoal.jpeg',
+      email: 'raquel@osp.com.br'
+    },
+    members: [
+      { name: 'Time de Analistas', role: 'Folha e Encargos' },
+      { name: 'Time de Assistentes', role: 'Rotinas Trabalhistas' },
+      
+    ]
+  },
+  {
     name: 'Sucesso do Cliente',
     color: 'rose',
     manager: {
       name: 'Polyane Fonseca',
-      role: 'Gerente de CX',
-      image: 'https://picsum.photos/300/300?random=7',
+      role: 'Gestora de CX',
+      image: '/team/Sucesso_Do_Cliente/Polyane_Sucesso_Do_Cliente.jpeg',
       email: 'polyane@osp.com.br'
     },
     members: [
       { name: 'Relacionamento', role: 'Account Managers' },
-      { name: 'Onboarding', role: 'Implementação' },
       { name: 'Suporte', role: 'Customer Support' }
+    ]
+  },
+  {
+    name: 'Administrativo',
+    color: 'slate',
+    manager: {
+      name: 'Larissa',
+      role: 'Supervisora',
+      image: '/team/Relacionamento_ADM/Larissa_Relacionamento_ADM.png',
+      email: 'administrativo@osp.com.br'
+    },
+    members: [
+      { name: 'Relacionamento ADM', role: 'Atendimento Interno' },
+      { name: 'Backoffice', role: 'Suporte Operacional' }
+    ]
+  },
+  {
+    name: 'Marketing',
+    color: 'amber',
+    manager: {
+      name: 'Giovanne',
+      role: 'Coordenador de Marketing',
+      image: '/team/Marketing/Giovanne_assistete_Marketing.jpeg',
+      email: 'marketing@osp.com.br'
+    },
+    members: [
+      { name: 'Conteúdo', role: 'Branding e Comunicação' },
+      { name: 'Performance', role: 'Aquisição e Dados' }
+    ]
+  },
+  {
+    name: 'Comercial',
+    color: 'cyan',
+    manager: {
+      name: 'Juliana',
+      role: 'Coordenadora',
+      image: '/team/Comercial/Juliana_Vendas.jpeg',
+      email: 'comercial@osp.com.br'
+    },
+    members: [
+      { name: 'Vendas', role: 'Prospecção e Relacionamento' },
+      { name: 'Pré-venda', role: 'Qualificação' }
+    ]
+  }
+  ,
+  {
+    name: 'RH',
+    color: 'pink',
+    manager: {
+      name: 'Mariely',
+      role: 'Coordenadora de RH',
+      image: '/team/RH/Mariely_RH.jpeg',
+      email: 'rh@osp.com.br'
+    },
+    members: [
+      { name: 'Recrutamento e Seleção', role: 'Aquisição de Talentos' },
+      { name: 'Treinamento e Desenvolvimento', role: 'Capacitação' }
     ]
   }
 ];

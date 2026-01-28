@@ -35,3 +35,9 @@ export interface Technology {
   description: string;
   logo: string;
 }
+
+export interface TeamPhoto {
+  name: string;
+  department: string;
+  path: string;
+}

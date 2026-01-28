@@ -1,0 +1,423 @@
+﻿[
+    {
+        "name":  "Arthur_Marketing",
+        "department":  "Marketing",
+        "path":  "Marketing/Arthur_Marketing.webp"
+    },
+    {
+        "name":  "Juliana_Vendas",
+        "department":  "Comercial",
+        "path":  "Comercial/Juliana_Vendas.jpeg"
+    },
+    {
+        "name":  "Leo_Marketing",
+        "department":  "Marketing",
+        "path":  "Marketing/Leo_Marketing.webp"
+    },
+    {
+        "name":  "Giovanne_assistete_Marketing",
+        "department":  "Marketing",
+        "path":  "Marketing/Giovanne_assistete_Marketing.jpeg"
+    },
+    {
+        "name":  "Adriana_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Adriana_DPT_Contabil.png"
+    },
+    {
+        "name":  "Adriano_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Adriano_DPT_Contabil.png"
+    },
+    {
+        "name":  "Ana_Luiza_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Ana_Luiza_DPT_Contabil.png"
+    },
+    {
+        "name":  "Andiara_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Andiara_DPT_Contabil.png"
+    },
+    {
+        "name":  "Andressa_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Andressa_DPT_Contabil.png"
+    },
+    {
+        "name":  "Camila_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Camila_DPT_Contabil.png"
+    },
+    {
+        "name":  "Daiane_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Daiane_DPT_Contabil.png"
+    },
+    {
+        "name":  "Debora_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Debora_DPT_Contabil.png"
+    },
+    {
+        "name":  "Elis_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Elis_DPT_Contabil.png"
+    },
+    {
+        "name":  "Everton_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Everton_DPT_Contabil.png"
+    },
+    {
+        "name":  "Ferdimary_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Ferdimary_DPT_Contabil.png"
+    },
+    {
+        "name":  "Gabriel_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Gabriel_DPT_Contabil.png"
+    },
+    {
+        "name":  "Iara_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Iara_DPT_Contabil.png"
+    },
+    {
+        "name":  "Jaqueline_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Jaqueline_DPT_Contabil.jpeg"
+    },
+    {
+        "name":  "Jessica_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Jessica_DPT_Contabil.jpeg"
+    },
+    {
+        "name":  "Katherine_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Katherine_DPT_Contabil.png"
+    },
+    {
+        "name":  "Leomir_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Leomir_DPT_Contabil.png"
+    },
+    {
+        "name":  "Loini_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Loini_DPT_Contabil.png"
+    },
+    {
+        "name":  "Miriã_DPT_contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Miriã_DPT_contabil.png"
+    },
+    {
+        "name":  "Natalia_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Natalia_DPT_Contabil.png"
+    },
+    {
+        "name":  "Patricia_DPT_contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Patricia_DPT_contabil.png"
+    },
+    {
+        "name":  "Priscila_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Priscila_DPT_Contabil.png"
+    },
+    {
+        "name":  "Samanta_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Samanta_DPT_Contabil.png"
+    },
+    {
+        "name":  "Tayla_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Tayla_DPT_Contabil.png"
+    },
+    {
+        "name":  "Viviane_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Viviane_DPT_Contabil.jpeg"
+    },
+    {
+        "name":  "Yara_DPT_Contabil",
+        "department":  "DPT_Contabil",
+        "path":  "DPT_Contabil/Yara_DPT_Contabil.png"
+    },
+    {
+        "name":  "Bruna_F_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Bruna_F_DPT_Fiscal (2).jpeg"
+    },
+    {
+        "name":  "Caroline_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Caroline_DPT_Fiscal.png"
+    },
+    {
+        "name":  "Erika_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Erika_DPT_Fiscal.jpeg"
+    },
+    {
+        "name":  "Evelyn_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Evelyn_DPT_Fiscal.png"
+    },
+    {
+        "name":  "Fernanda_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Fernanda_DPT_Fiscal.jpeg"
+    },
+    {
+        "name":  "Gabriela_DPT_Fiscal(1)",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Gabriela_DPT_Fiscal.jpeg"
+    },
+    {
+        "name":  "Gabriela_DPT_Fiscal(2)",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Gabriela_DPT_Fiscal.png"
+    },
+    {
+        "name":  "Gabriella_DPT_Fiscal(3)",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Gabrielaa_DPT_Fiscal.png"
+    },
+    {
+        "name":  "Gabriel_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Gabriel_DPT_Fiscal.png"
+    },
+    {
+        "name":  "IsabellaQ_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/IsabellaQ_DPT_Fiscal.png"
+    },
+    {
+        "name":  "Jessica_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Jessica.png"
+    },
+    {
+        "name":  "Juraci_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Juraci_DPT_Fiscal.png"
+    },
+    {
+        "name":  "Katiane_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Katiane_DPT_Fiscal.png"
+    },
+    {
+        "name":  "Kelly_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Kelly_DPT_Fiscal.png"
+    },
+    {
+        "name":  "Laene_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Laene_DPT_Fiscal.png"
+    },
+    {
+        "name":  "Luis_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Luis_DPT_Fiscal.png"
+    },
+    {
+        "name":  "Luiz_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Luiz_DPT_Fiscal.jpeg"
+    },
+    {
+        "name":  "Marcela_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Marcela_DPT_Fiscal.png"
+    },
+    {
+        "name":  "Miria_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Miria_DPT_Fiscal.jpeg"
+    },
+    {
+        "name":  "Mylena_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Mylena_DPT_Fiscal.png"
+    },
+    {
+        "name":  "Natalia_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Natalia_DPT_Fiscal.png"
+    },
+    {
+        "name":  "Nayara_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Nayara_DPT_Fiscal.png"
+    },
+    {
+        "name":  "Osiane_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Osiane_DPT_Fiscal.png"
+    },
+    {
+        "name":  "Rafaela_Oliveira_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Rafaela_DPT_Fiscal.png"
+    },
+    {
+        "name":  "Taisi_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Taisi_DPT_Fiscal.png"
+    },
+    {
+        "name":  "Tatiane_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Tatiane_DPT_Fiscal.jpeg"
+    },
+    {
+        "name":  "Thaynara_DPT_Fiscal",
+        "department":  "DPT_Fiscal",
+        "path":  "DPT_Fiscal/Thaynara_DPT_Fiscal.jpeg"
+    },
+    {
+        "name":  "alessandra_DPT_Pessoal",
+        "department":  "DPT_Pessoal",
+        "path":  "DPT_Pessoal/alessandra_DPT_Pessoal.png"
+    },
+    {
+        "name":  "Andressa_DPT_Pessoal",
+        "department":  "DPT_Pessoal",
+        "path":  "DPT_Pessoal/Andressa_DPT_Pessoal.jpeg"
+    },
+    {
+        "name":  "Camilaa_DPT_Pessoal",
+        "department":  "DPT_Pessoal",
+        "path":  "DPT_Pessoal/Camilaa_DPT_Pessoal.png"
+    },
+    {
+        "name":  "Camila_DPT_Pessoal",
+        "department":  "DPT_Pessoal",
+        "path":  "DPT_Pessoal/Camila_DPT_Pessoal.png"
+    },
+    {
+        "name":  "Camila__DPT_Pessoal",
+        "department":  "DPT_Pessoal",
+        "path":  "DPT_Pessoal/Camila__DPT_Pessoal.png"
+    },
+    {
+        "name":  "Gabriela_DPT_Pessoal",
+        "department":  "DPT_Pessoal",
+        "path":  "DPT_Pessoal/Gabriela_DPT_Pessoal.png"
+    },
+    {
+        "name":  "Hanna",
+        "department":  "DPT_Pessoal",
+        "path":  "DPT_Pessoal/Hanna.png"
+    },
+    {
+        "name":  "Isabella_DPT_Pessoal",
+        "department":  "DPT_Pessoal",
+        "path":  "DPT_Pessoal/Isabella_DPT_Pessoal.png"
+    },
+    {
+        "name":  "Joice_DPT_Pessoal",
+        "department":  "DPT_Pessoal",
+        "path":  "DPT_Pessoal/Joice_DPT_Pessoal.png"
+    },
+    {
+        "name":  "Livia_DPT_Pessoal",
+        "department":  "DPT_Pessoal",
+        "path":  "DPT_Pessoal/Livia_DPT_Pessoal.jpeg"
+    },
+    {
+        "name":  "Marcela_DPT_Pessoal",
+        "department":  "DPT_Pessoal",
+        "path":  "DPT_Pessoal/Marcela_DPT_Pessoal.png"
+    },
+    {
+        "name":  "Milena_DPT_Pessoal",
+        "department":  "DPT_Pessoal",
+        "path":  "DPT_Pessoal/Milena_DPT_Pessoal.png"
+    },
+    {
+        "name":  "Raquel_DPT_Pessoal",
+        "department":  "DPT_Pessoal",
+        "path":  "DPT_Pessoal/Raquel_DPT_Pessoal.jpeg"
+    },
+    {
+        "name":  "Solange_DPT_Pessoal",
+        "department":  "DPT_Pessoal",
+        "path":  "DPT_Pessoal/Solange_DPT_Pessoal.png"
+    },
+    {
+        "name":  "Vanderlei_DPT_Pessoal",
+        "department":  "DPT_Pessoal",
+        "path":  "DPT_Pessoal/Vanderlei_DPT_Pessoal.png"
+    },
+    {
+        "name":  "Andre_Moby",
+        "department":  "Misc",
+        "path":  "Misc/Andre_Moby.jpeg"
+    },
+    {
+        "name":  "Luciana_Moby",
+        "department":  "Misc",
+        "path":  "Misc/Luciana_Moby.png"
+    },
+    {
+        "name":  "Paulo_Moby",
+        "department":  "Misc",
+        "path":  "Misc/Paulo_Moby.jpeg"
+    },
+    {
+        "name":  "Tatiana_Moby",
+        "department":  "Misc",
+        "path":  "Misc/Tatiana_Moby.png"
+    },
+    {
+        "name":  "Aline_Relacionamento_ADM",
+        "department":  "Administrativo",
+        "path":  "Administrativo/Aline_Relacionamento_ADM.jpeg"
+    },
+    {
+        "name":  "Ayla_Relacionamento_ADM",
+        "department":  "Administrativo",
+        "path":  "Administrativo/Ayla_Relacionamento_ADM.png"
+    },
+    {
+        "name":  "Larissa_Relacionamento_ADM",
+        "department":  "Administrativo",
+        "path":  "Administrativo/Larissa_Relacionamento_ADM.png"
+    },
+    {
+        "name":  "Silvia_Relacionamento_ADM",
+        "department":  "Administrativo",
+        "path":  "Administrativo/Silvia_Relacionamento_ADM.png"
+    },
+    {
+        "name":  "_Aline_Relacionamento_ADM",
+        "department":  "Administrativo",
+        "path":  "Administrativo/_Aline_Relacionamento_ADM.png"
+    },
+    {
+        "name":  "Alex_Sucesso_Do_Cliente",
+        "department":  "Sucesso_Do_Cliente",
+        "path":  "Sucesso_Do_Cliente/Alex_Sucesso_Do_Cliente.jpeg"
+    },
+    {
+        "name":  "Polyane_Sucesso_Do_Cliente",
+        "department":  "Sucesso_Do_Cliente",
+        "path":  "Sucesso_Do_Cliente/Polyane_Sucesso_Do_Cliente.jpeg"
+    }
+    ,
+    {
+        "name": "Mariely_RH",
+        "department": "RH",
+        "path": "RH/Mariely_RH.jpeg"
+    }
+]

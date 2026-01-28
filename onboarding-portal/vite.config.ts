@@ -12,7 +12,9 @@ export default defineConfig(({ mode }) => {
       plugins: [react()],
       define: {
         'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
+          'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+          'process.env.TEAM_BASE_URL': JSON.stringify(env.TEAM_BASE_URL || '/team'),
+          'process.env.HERO_IMAGE_URL': JSON.stringify(env.HERO_IMAGE_URL || '')
       },
       resolve: {
         alias: {

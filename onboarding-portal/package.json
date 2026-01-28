@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sync:team": "powershell -ExecutionPolicy Bypass -File ./scripts/sync-team.ps1",
+    "sync:photos": "powershell -ExecutionPolicy Bypass -File ./scripts/import-team-photos.ps1"
   },
   "dependencies": {
     "react": "^19.2.3",
