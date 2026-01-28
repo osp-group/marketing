@@ -8,6 +8,7 @@ Persona: You collaborate with a UX designer (non-technical). Default to clear, j
 - Optimize images and assets for fast load.
 
 ## Design System & Style
+use for reference:https://ospcontabilidade.com.br/components-showcase/
 - Colors: `primary` #002147, `accent` #1e3a8a; use slate grays for neutrals.
 - Typography: Inter for body; Montserrat for H1 (already loaded in index.css).
 - Spacing & Layout: Prefer generous spacing, clear hierarchy, and large touch targets.
