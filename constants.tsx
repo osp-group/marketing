@@ -46,32 +46,23 @@ export const TECHNOLOGIES: Technology[] = [
   { name: 'Bradial Telecom', description: 'Sistema de telefonia empresarial', logo: '/assets/logo/tech/BradialTelecom logo.png' }
 ];
 
-// Logos de clientes (empresas que confiam na OSP) - selecionados para melhor contraste
+// Logos de clientes (empresas que confiam na OSP) - 15 clientes principais
 export const CLIENT_LOGOS: string[] = [
-  '/team/Misc/bigsystemlogo.png',
-  '/team/Misc/cooperfer_cooperativa_logo.jpg',
-  '/team/Misc/mosyle_logo.jpg',
-  '/team/Misc/everseek_logo.jpg',
-  '/team/Misc/gruposuprema_logo.jpg',
   '/team/Misc/menin_engenharia_logo.jpg',
-  '/team/Misc/logo_global_moldes.png',
+  '/team/Misc/AccervoIndustria.jpg',
+  '/team/Misc/mosyle_logo.jpg',
+  '/team/Misc/cooperfer_cooperativa_logo.jpg',
   '/team/Misc/logoCrisabel.png',
   '/team/Misc/wortex_logoFB.png',
-  '/team/Misc/greenexta.jpg',
-  '/team/Misc/AccervoIndustria.jpg',
-  '/team/Misc/acervo logo png.png',
-  '/team/Misc/logo-inoxbrito.png',
-  '/team/Misc/herrlog-logo.png',
   '/team/Misc/logo-tubesteel.jpg',
-  '/team/Misc/casapapel-logo.png',
-  '/team/Misc/Cooperfer-Ferramentaria-600px_Grenn-Bkg-Novo.png',
-  '/team/Misc/UNILOTUS DISTRIBUIDORA DE ALIMENTOS LTDA.jpg',
-  '/team/Misc/MOSTEIRO DE SAO BENTO EM VINHEDO.jpg',
-  '/team/Misc/CENTRO DE CONVENCOES E EVENTOS SANTA GENEBRA LTDA..png',
-  '/team/Misc/images.jpg',
-  '/team/Misc/PROGT INDUSTRIAL LTDA.jpg',
+  '/team/Misc/greenexta.jpg',
+  '/team/Misc/gruposuprema_logo.jpg',
+  '/team/Misc/logo_global_moldes.png',
   '/team/Misc/SERVPRIME SERVICOS LTDA.jpg',
-  '/team/Misc/SIGIPACK INDUSTRIA E COMERCIO DE EMBALAGENS LTDA.jpg'
+  '/team/Misc/bigsystemlogo.png',
+  '/team/Misc/SIGIPACK INDUSTRIA E COMERCIO DE EMBALAGENS LTDA.jpg',
+  '/team/Misc/PROGT INDUSTRIAL LTDA.jpg',
+  '/team/Misc/everseek_logo.jpg'
 ];
 
 export const PARTNERS: Employee[] = [
@@ -162,7 +153,7 @@ export const DEPARTMENTS: Department[] = [
       name: 'Larissa',
       role: 'Supervisora',
       image: '/team/Relacionamento_ADM/Larissa_Supervisora_Relacionamento_ADM.png',
-      email: 'administrativo@osp.com.br'
+      email: 'larissa@osp.com.br'
     },
     members: [
       { name: 'Relacionamento ADM', role: 'Atendimento Interno' },
@@ -176,7 +167,7 @@ export const DEPARTMENTS: Department[] = [
       name: 'Paulo',
       role: 'Coord Gente e Gestão',
       image: '/team/Moby/Paulo_Coord Gente e Gestão_Moby.jpeg',
-      email: 'moby@osp.com.br'
+      email: 'paulo.ricardo@osp.com.br'
     },
     members: [
       { name: 'Gestão de Pessoas', role: 'RH Moby' },
@@ -188,9 +179,9 @@ export const DEPARTMENTS: Department[] = [
     color: 'amber',
     manager: {
       name: 'Giovanne',
-      role: 'Coordenador de Marketing',
+      role: 'Assistente',
       image: '/team/Marketing/Giovanne_assistete_Marketing.jpeg',
-      email: 'marketing@osp.com.br'
+      email: 'mkt@osp.com.br'
     },
     members: [
       { name: 'Conteúdo', role: 'Branding e Comunicação' },
@@ -202,9 +193,9 @@ export const DEPARTMENTS: Department[] = [
     color: 'cyan',
     manager: {
       name: 'Juliana',
-      role: 'Coordenadora',
+      role: 'Assistente',
       image: '/team/Comercial/Juliana_Vendas.jpeg',
-      email: 'comercial@osp.com.br'
+      email: 'juliana.casciatori@osp.com.br'
     },
     members: [
       { name: 'Vendas', role: 'Prospecção e Relacionamento' },
@@ -219,7 +210,7 @@ export const DEPARTMENTS: Department[] = [
       name: 'Mariely',
       role: 'Coordenadora de RH',
       image: '/team/RH/Mariely_RH.jpeg',
-      email: 'rh@osp.com.br'
+      email: 'Mariely@osp.com.br'
     },
     members: [
       { name: 'Recrutamento e Seleção', role: 'Aquisição de Talentos' },

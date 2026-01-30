@@ -1,0 +1,21 @@
+{
+  "newEmployee": {
+    "name": "",
+    "photo": "",
+    "instructions": "Atualize 'name' com o nome do novo colaborador e 'photo' com o caminho da foto (ex: '/team/DPT_Contabil/Nome_Cargo_Departamento.jpeg'). Deixe vazio para usar valores padrão."
+  },
+  "teamUpdates": {
+    "instructions": "Para atualizar os times, edite o arquivo 'public/team/team.json'. Adicione novas entradas seguindo o formato: {\"name\": \"Nome\", \"role\": \"Cargo\", \"department\": \"Departamento\", \"path\": \"Departamento/Arquivo.jpeg\"}",
+    "availableDepartments": [
+      "DPT_Contabil",
+      "DPT_Fiscal",
+      "DPT_Pessoal",
+      "Moby",
+      "RH",
+      "Relacionamento_ADM",
+      "Sucesso_Do_Cliente",
+      "Marketing",
+      "Comercial"
+    ]
+  }
+}

@@ -6,6 +6,12 @@
         "path":  "Marketing/Arthur_Marketing.webp"
     },
     {
+        "name":  "Giovanne",
+        "role":  "Assistente",
+        "department":  "Marketing",
+        "path":  "Marketing/Giovanne_assistete_Marketing.jpeg"
+    },
+    {
         "name":  "Juliana",
         "role":  "Vendas",
         "department":  "Comercial",

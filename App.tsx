@@ -150,7 +150,24 @@ const App: React.FC = () => {
 
   useEffect(() => {
     loadTeam();
+    loadConfig();
   }, []);
+
+  // Load config.json for easy editing
+  const loadConfig = async () => {
+    try {
+      const response = await fetch('/config.json');
+      const config = await response.json();
+      if (config.newEmployee?.name) {
+        setWelcomeName(config.newEmployee.name);
+      }
+      if (config.newEmployee?.photo) {
+        setWelcomePhoto(config.newEmployee.photo);
+      }
+    } catch (error) {
+      console.log('Config file not loaded, using URL params or defaults');
+    }
+  };
 
   // Parse welcome data from query params (?nome=...&foto=...)
   useEffect(() => {
@@ -159,7 +176,12 @@ const App: React.FC = () => {
       const name = qp.get('nome') || '';
       const foto = qp.get('foto');
       const bg = qp.get('bg');
-      setWelcomeName(name);
+      
+      // URL params override config.json
+      if (name) {
+        setWelcomeName(name);
+      }
+      
       if (foto) {
         if (/^https?:\/\//i.test(foto)) {
           setWelcomePhoto(foto);
@@ -168,8 +190,6 @@ const App: React.FC = () => {
           const encoded = foto.split('/').map(s => encodeURIComponent(s)).join('/');
           setWelcomePhoto(`${base}/${encoded}`);
         }
-      } else {
-        setWelcomePhoto(null);
       }
 
       const envBg = (process.env.HERO_IMAGE_URL as string) || '';
@@ -366,19 +386,22 @@ const App: React.FC = () => {
           <div className="container mx-auto px-6 md:px-12">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
-                 <img src="https://images.unsplash.com/photo-1557426282-285758c717a1?auto=format&fit=crop&q=80&w=1000" alt="Office Life" className="w-full h-64 object-cover md:h-[500px]" />
+                 <img src="/assets/sobre/Foto sobre nos.png" alt="Equipe OSP" className="w-full h-[700px] object-cover object-top" />
               </div>
               <div className="space-y-8">
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center text-[#002147]">
                     <History />
                   </div>
-                  <h2 className="text-4xl font-extrabold text-[#002147]">Sobre a OSP</h2>
+                  <h2 className="text-4xl font-extrabold text-[#002147]">Bem-vindo à OSP</h2>
                 </div>
-                <div className="prose prose-lg text-gray-600 leading-relaxed">
-                  <p>Fundada em 1977, a OSP nasceu do trabalho e da dedicação. Hoje somos uma empresa de consultoria e gestão de negócios, com produtos personalizados para cada necessidade.</p>
-                  <p>Primeiro, conheça nossa história e como apoiamos nossos clientes de forma estratégica, indo além da mera entrega de obrigações acessórias.</p>
-                  <p className="font-semibold text-[#002147]">Atuamos com Assessoria Contábil especializada em negócios no Regime de Lucro Real, com foco em Indústrias, Serviços e Multinacionais.</p>
+                <div className="prose prose-lg text-gray-600 leading-relaxed space-y-4">
+                  <p>Que alegria ter você aqui! Desde 1977, construímos uma história de <strong>quase 50 anos</strong> baseada em excelência técnica, inovação e, acima de tudo, em pessoas como você.</p>
+                  <p>A OSP não é apenas uma empresa de contabilidade. Somos uma <strong>consultoria estratégica</strong> que atua como braço técnico de empresas exigentes. Estamos presentes em <strong>14 estados brasileiros</strong>, atendemos mais de <strong>600 empresas</strong> e já geramos mais de <strong>R$ 120 milhões em economia tributária</strong> para nossos clientes.</p>
+                  <p>Nossa equipe de <strong>80 profissionais</strong> trabalha com paixão para ir além das obrigações fiscais: desenvolvemos pessoas e negócios, trazendo realização e prosperidade para todos os envolvidos.</p>
+                  <p className="text-[#002147] font-semibold bg-slate-50 p-4 rounded-lg border-l-4 border-[#002147]">
+                    Aqui você faz parte de uma equipe que valoriza expertise técnica, inovação e crescimento contínuo. Sua jornada começa agora, e estamos empolgados para construir o futuro juntos!
+                  </p>
                 </div>
               </div>
             </div>
@@ -452,7 +475,7 @@ const App: React.FC = () => {
               </div>
             </div>
             {(() => {
-              const shuffled = [...CLIENT_LOGOS].sort(() => Math.random() - 0.5).slice(0, 12);
+              const shuffled = [...CLIENT_LOGOS].sort(() => Math.random() - 0.5).slice(0, 15);
               return (
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
                   {shuffled.map((logo, i) => (
