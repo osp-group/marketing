@@ -38,7 +38,8 @@ const App: React.FC = () => {
     'Pessoal': 'DPT_Pessoal',
     'Fiscal e Tributário': 'DPT_Fiscal',
     'Sucesso do Cliente': 'Sucesso_Do_Cliente',
-    'Administrativo': 'Administrativo',
+    'Administrativo': 'Relacionamento_ADM',
+    'Moby': 'Moby',
     'Comercial': 'Comercial',
     'Marketing': 'Marketing',
     'RH': 'RH'
@@ -50,6 +51,8 @@ const App: React.FC = () => {
     DPT_Pessoal: 'Pessoal',
     DPT_Fiscal: 'Fiscal e Tributário',
     Sucesso_Do_Cliente: 'Sucesso do Cliente',
+    Relacionamento_ADM: 'Administrativo',
+    Moby: 'Moby',
     Administrativo: 'Administrativo',
     RH: 'RH'
   };
@@ -98,7 +101,16 @@ const App: React.FC = () => {
   };
 
   const toggleDept = (key: string) => {
-    setExpandedDept(prev => ({ ...prev, [key]: !prev[key] }));
+    setExpandedDept(prev => {
+      const isCurrentlyExpanded = prev[key];
+      // Close all departments first
+      const allClosed: Record<string, boolean> = {};
+      // If the clicked department was closed, open it. If it was open, close it.
+      if (!isCurrentlyExpanded) {
+        allClosed[key] = true;
+      }
+      return allClosed;
+    });
   };
   const loadTeam = () => {
     const base = (process.env.TEAM_BASE_URL as string) || '/team';
@@ -209,15 +221,8 @@ const App: React.FC = () => {
   }, [checkedTasks]);
 
   const Logo = () => (
-    <div className="flex items-center space-x-2">
-      <div className="bg-[#002147] p-2 rounded-full border-2 border-white shadow-lg">
-        <svg viewBox="0 0 100 100" className="w-8 h-8 fill-white">
-          <path d="M50 5 L85 25 L85 75 L50 95 L15 75 L15 25 Z" fill="none" stroke="currentColor" strokeWidth="2" />
-          <path d="M50 20 L65 40 L50 60 L35 40 Z" fill="currentColor" />
-          <path d="M50 60 L50 85 M40 75 L60 75" stroke="currentColor" strokeWidth="4" />
-        </svg>
-      </div>
-      <span className="font-bold text-2xl tracking-tighter text-[#002147]">OSP</span>
+    <div className="flex items-center justify-center">
+      <img src="/assets/logo/Logotipo OSP branco.png" alt="OSP Logotipo" className="h-16 w-auto object-contain" />
     </div>
   );
 
@@ -261,7 +266,7 @@ const App: React.FC = () => {
       <header className="fixed top-0 left-0 right-0 bg-[#002147] text-white shadow z-50 lg:hidden">
         <div className="flex items-center justify-between px-4 h-14">
           <div className="flex items-center gap-2">
-            <img src="/assets/logo/osp-logo-white.webp" alt="OSP" className="w-7 h-7" />
+            <img src="/assets/logo/Logo OSP branco.png" alt="OSP" className="w-7 h-7 object-contain" />
             <span className="text-sm font-bold tracking-tight">OSP</span>
           </div>
           <button
@@ -331,7 +336,7 @@ const App: React.FC = () => {
                 {/* Emblem aligned to left */}
                 <div className="hidden md:flex items-center gap-3 mt-6">
                   <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-lg">
-                    <img src="/assets/logo/osp-logo-blue.webp" alt="OSP" className="w-10 h-10 object-contain" />
+                    <img src="/assets/logo/Logo OSP Azul.png" alt="OSP" className="w-10 h-10 object-contain" />
                   </div>
                 </div>
               </div>
@@ -573,10 +578,11 @@ const App: React.FC = () => {
                         <h4 className="font-bold text-gray-800 text-sm">{dept.manager.name}</h4>
                         <p className="text-[11px] text-gray-500 mb-2">{dept.manager.role}</p>
                         <span className={`text-[10px] font-bold text-${dept.color}-700 uppercase mb-3 bg-${dept.color}-50 px-2 py-0.5 rounded`}>{dept.name}</span>
-                        <div className="flex space-x-2">
+                        <div className="flex flex-col items-center space-y-1">
                            <a href={`mailto:${dept.manager.email}`} className="p-1.5 bg-slate-100 rounded-full text-slate-500 hover:text-blue-600 transition-colors">
                              <Mail size={12} />
                            </a>
+                           <p className="text-[9px] text-gray-500">{dept.manager.email}</p>
                         </div>
                       </div>
                     </div>
@@ -615,11 +621,11 @@ const App: React.FC = () => {
                             <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5">
                               {sortedPhotos.map((p, i) => (
                                 <div key={`${p.name}-${i}`} className="group relative bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden w-[120px] h-[200px] transform transition-all duration-200 ease-out hover:shadow-lg hover:ring-2 hover:ring-[#002147]/50 hover:scale-[1.03] hover:z-50">
-                                  <img src={buildPhotoUrl(p)} alt={formatDisplayName(p, dept.name)} className="absolute inset-0 w-full h-full object-cover" />
-                                  <div className="absolute inset-0 bg-[#002147]/25 opacity-0 transition-opacity duration-200 group-hover:opacity-100"></div>
-                                  <div className="absolute bottom-0 left-0 right-0 bg-black/40 group-hover:bg-[#002147]/60 text-white p-2 transition-colors duration-200">
-                                    <p className="text-xs font-semibold leading-tight">{formatDisplayName(p, dept.name)}</p>
-                                    <p className="text-[8px] uppercase opacity-90">{dept.name}</p>
+                                  <img src={buildPhotoUrl(p)} alt={p.name} className="absolute inset-0 w-full h-full object-cover" />
+                                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-100"></div>
+                                  <div className="absolute bottom-0 left-0 right-0 text-white p-3">
+                                    <p className="text-sm font-bold leading-tight mb-0.5">{p.name}</p>
+                                    {p.role && <p className="text-[10px] font-normal opacity-80 leading-tight">{p.role}</p>}
                                   </div>
                                 </div>
                               ))}

@@ -38,6 +38,7 @@ export interface Technology {
 
 export interface TeamPhoto {
   name: string;
+  role?: string;
   department: string;
   path: string;
 }

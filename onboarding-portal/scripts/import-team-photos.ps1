@@ -1,5 +1,5 @@
 param(
-  [string]$Source = "C:\\Users\\OSP\\Downloads\\Fotos dos colaboradores",
+  [string]$Source = "C:\\Users\\OSP\\Desktop\\fotos perfil colaboradores",
   [string]$Dest = (Join-Path $PSScriptRoot "..\\public\\team")
 )
 
@@ -24,11 +24,23 @@ function Get-DepartmentKey {
   if ($nameLower -match 'marketing') { return 'Marketing' }
   if ($nameLower -match 'vendas|comercial') { return 'Comercial' }
 
-  # Folder-based mapping
+  # File name-based mapping (more specific - check suffixes first)
+  if ($nameLower -match '_dpt_fiscal') { return 'DPT_Fiscal' }
+  if ($nameLower -match '_dpt_pessoal') { return 'DPT_Pessoal' }
+  if ($nameLower -match '_dpt_contabil') { return 'DPT_Contabil' }
+  if ($nameLower -match '_relacionamento_adm') { return 'Relacionamento_ADM' }
+  if ($nameLower -match '_sucesso_do_cliente') { return 'Sucesso_Do_Cliente' }
+  if ($nameLower -match '_moby') { return 'Moby' }
+  if ($nameLower -match '_rh') { return 'RH' }
+
+  # Folder-based mapping (fallback)
   if ($pathLower -match 'contabil') { return 'DPT_Contabil' }
   if ($pathLower -match 'pessoal|dp') { return 'DPT_Pessoal' }
   if ($pathLower -match 'fiscal|tribut') { return 'DPT_Fiscal' }
-  if ($pathLower -match 'sucesso|cliente|relacionamento') { return 'Sucesso_Do_Cliente' }
+  if ($pathLower -match 'relacionamento.*adm') { return 'Relacionamento_ADM' }
+  if ($pathLower -match 'sucesso.*cliente') { return 'Sucesso_Do_Cliente' }
+  if ($pathLower -match 'moby') { return 'Moby' }
+  if ($pathLower -match '\brh\b') { return 'RH' }
   if ($pathLower -match 'marketing') { return 'Marketing' }
   if ($pathLower -match 'comercial|vendas') { return 'Comercial' }
   return 'Misc'
@@ -50,8 +62,21 @@ foreach ($img in $images) {
   Copy-Item -Path $img.FullName -Destination $target -Force
 
   $rel = Join-Path $dept $img.Name
+  
+  # Parse filename pattern: NOME_CARGO_DEPARTAMENTO - Separate name and roleoby|RH|M
+  $baseName = $img.BaseName
+  
+  # Remove department suffix (DPT_Pessoal, DPT_Fiscal, DPT_Contabil, etc.)
+  $cleanedName = $baseName -replace '_(DPT_Pessoal|DPT_Fiscal|DPT_Contabil|Sucesso_Do_Cliente|Relacionamento_ADM|Marketing|Comercial|Misc)$', ''
+  
+  # Split NOME_CARGO into separate fields
+  $parts = $cleanedName -split '_'
+  $name = if ($parts.Length -ge 1) { $parts[0] } else { $cleanedName }
+  $role = if ($parts.Length -ge 2) { ($parts[1..($parts.Length-1)] -join ' ') } else { '' }
+  
   $manifest += [PSCustomObject]@{
-    name = $img.BaseName
+    name = $name
+    role = $role
     department = $dept
     path = ($rel -replace "\\", "/")
   }

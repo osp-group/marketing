@@ -40,26 +40,38 @@ export const ONBOARDING_TASKS: OnboardingTask[] = [
 ];
 
 export const TECHNOLOGIES: Technology[] = [
-  { name: 'Google Workspace', description: 'Multi-ferramentas do google', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Google_Workspace_Logo.svg/1024px-Google_Workspace_Logo.svg.png' },
-  { name: 'Gestta', description: 'Plataforma de gestão contábil', logo: 'https://play-lh.googleusercontent.com/B9O0oK_G_u8G8Hq3_N7-Tz_n-p-e8Y-E_Xk-3Pz6Z0W5w1mS6_Z_JqY-y7z9y3-9y0=w240-h480-rw' },
-  { name: 'ONVIO', description: 'Acessar e baixar diversos documentos e informações trabalhistas', logo: 'https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/p5n7v6z3y9v9e9p5j6y5' },
-  { name: 'Bradial telecom', description: 'Sistema de telefonia', logo: 'https://picsum.photos/100/100?random=10' }
+  { name: 'Google Workspace', description: 'Multi-ferramentas do Google', logo: '/assets/logo/tech/google woekspace Logo.png' },
+  { name: 'Gestta', description: 'Plataforma de gestão contábil', logo: '/assets/logo/tech/gestta logo.png' },
+  { name: 'Onvio', description: 'Documentos e informações trabalhistas', logo: '/assets/logo/tech/Onvio logo.png' },
+  { name: 'Bradial Telecom', description: 'Sistema de telefonia empresarial', logo: '/assets/logo/tech/BradialTelecom logo.png' }
 ];
 
-// Logos de clientes (12 itens) usando assets locais
+// Logos de clientes (empresas que confiam na OSP) - selecionados para melhor contraste
 export const CLIENT_LOGOS: string[] = [
-  '/assets/logo/tech/google-workspace.webp',
-  '/assets/logo/tech/gestta.webp',
-  '/assets/logo/tech/onvio.webp',
-  '/assets/logo/tech/bradial-telecom.webp',
-  '/assets/logo/Logo_OSP_azul.png',
-  '/assets/logo/OSP_Logo_white (1).png',
-  '/assets/logo/Logo_OSP_azul copy.png',
-  '/assets/logo/OSP_Logo_white (1) copy.png',
-  '/assets/logo/tech/google-workspace.png',
-  '/assets/logo/tech/gestta.png',
-  '/assets/logo/tech/onvio.png',
-  '/assets/logo/tech/bradial-telecom.png'
+  '/team/Misc/bigsystemlogo.png',
+  '/team/Misc/cooperfer_cooperativa_logo.jpg',
+  '/team/Misc/mosyle_logo.jpg',
+  '/team/Misc/everseek_logo.jpg',
+  '/team/Misc/gruposuprema_logo.jpg',
+  '/team/Misc/menin_engenharia_logo.jpg',
+  '/team/Misc/logo_global_moldes.png',
+  '/team/Misc/logoCrisabel.png',
+  '/team/Misc/wortex_logoFB.png',
+  '/team/Misc/greenexta.jpg',
+  '/team/Misc/AccervoIndustria.jpg',
+  '/team/Misc/acervo logo png.png',
+  '/team/Misc/logo-inoxbrito.png',
+  '/team/Misc/herrlog-logo.png',
+  '/team/Misc/logo-tubesteel.jpg',
+  '/team/Misc/casapapel-logo.png',
+  '/team/Misc/Cooperfer-Ferramentaria-600px_Grenn-Bkg-Novo.png',
+  '/team/Misc/UNILOTUS DISTRIBUIDORA DE ALIMENTOS LTDA.jpg',
+  '/team/Misc/MOSTEIRO DE SAO BENTO EM VINHEDO.jpg',
+  '/team/Misc/CENTRO DE CONVENCOES E EVENTOS SANTA GENEBRA LTDA..png',
+  '/team/Misc/images.jpg',
+  '/team/Misc/PROGT INDUSTRIAL LTDA.jpg',
+  '/team/Misc/SERVPRIME SERVICOS LTDA.jpg',
+  '/team/Misc/SIGIPACK INDUSTRIA E COMERCIO DE EMBALAGENS LTDA.jpg'
 ];
 
 export const PARTNERS: Employee[] = [
@@ -149,12 +161,26 @@ export const DEPARTMENTS: Department[] = [
     manager: {
       name: 'Larissa',
       role: 'Supervisora',
-      image: '/team/Relacionamento_ADM/Larissa_Relacionamento_ADM.png',
+      image: '/team/Relacionamento_ADM/Larissa_Supervisora_Relacionamento_ADM.png',
       email: 'administrativo@osp.com.br'
     },
     members: [
       { name: 'Relacionamento ADM', role: 'Atendimento Interno' },
       { name: 'Backoffice', role: 'Suporte Operacional' }
+    ]
+  },
+  {
+    name: 'Moby',
+    color: 'violet',
+    manager: {
+      name: 'Paulo',
+      role: 'Coord Gente e Gestão',
+      image: '/team/Moby/Paulo_Coord Gente e Gestão_Moby.jpeg',
+      email: 'moby@osp.com.br'
+    },
+    members: [
+      { name: 'Gestão de Pessoas', role: 'RH Moby' },
+      { name: 'Financeiro', role: 'Administrativo Moby' }
     ]
   },
   {
