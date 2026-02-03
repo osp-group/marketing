@@ -1,91 +1,236 @@
-<div align="center">
-  <h1>📘 OSP Onboarding Portal</h1>
-  <p>Aplicação web do portal de onboarding da OSP Contabilidade, parte do repositório <a href="https://github.com/osp-group/marketing">osp-group/marketing</a> (pasta <code>onboarding-portal</code>).</p>
-</div>
+# 🎯 OSP Marketing
+
+Repositório central para gestão de marketing, conteúdo e onboarding da **OSP Contabilidade**.
 
 ## 📋 Sobre
 
-Este projeto entrega o portal de onboarding para novos colaboradores e parceiros, com:
-- Seções institucionais, equipe e parceiros
-- Assets versionados em <a href="https://github.com/osp-group/marketing/tree/main/onboarding-portal/public">public/</a>
-- Templates e docs em <a href="https://github.com/osp-group/marketing/tree/main/onboarding-portal/docs">docs/</a>
+Este repositório é usado para:
 
-Para organização geral de marketing, consulte o README do repositório principal: <a href="https://github.com/osp-group/marketing">osp-group/marketing</a>.
+- **Gestão de tarefas de marketing** via GitHub Issues e Projects
+- **Planejamento de conteúdo** (blog, Instagram, campanhas)
+- **Portal de Onboarding** para novos funcionários (aplicação React)
+- **Coordenação entre equipe** de marketing e desenvolvimento
 
-## 🚀 Executar localmente
+## 🗂️ Board de Tarefas
 
-Pré-requisitos: Node.js (v18+ recomendado)
+Todas as tarefas são gerenciadas no Kanban board:
 
-1. Instalar dependências:
-   ```bash
-   npm install
-   ```
-2. Rodar em desenvolvimento:
-   ```bash
-   npm run dev
-   ```
-3. Build de produção (opcional):
-   ```bash
-   npm run build
-   npm run preview
-   ```
+👉 **[Ver Board](https://github.com/orgs/osp-group/projects/4/views/1)**
 
-## 👥 Galeria da Equipe (Sync)
+## 👥 Equipe
 
-A exibição da equipe usa imagens e um manifesto em [public/team](public/team).
+| Pessoa | Área | GitHub |
+|--------|------|--------|
+| Guilherme Pagotto | Marketing/Estratégia | [@gpagotto79](https://github.com/gpagotto79) |
+| Leo Pagotto | Desenvolvimento | [@leonpagotto](https://github.com/leonpagotto) |
+| Gigi | Marketing/Conteúdo | TBD |
 
-- Fonte de verdade (repo): https://github.com/osp-group/marketing/tree/main/onboarding-portal/public/team
-- Pasta local do app: [public/team](public/team)
+## 🏷️ Labels
 
-### Sync rápido (PowerShell)
+| Label | Cor | Descrição |
+|-------|-----|-----------|
+| `P1` | 🔴 | Alta prioridade |
+| `P2` | 🟡 | Prioridade média |
+| `P3` | 🟢 | Baixa prioridade |
+| `onboarding` | 🟣 | Tarefas de onboarding |
+| `content` | 🩵 | Criação de conteúdo |
+| `ads` | 🟠 | Campanhas pagas |
+| `dev` | 🔵 | Desenvolvimento/Tech |
 
-Use o script para sincronizar do repositório de marketing para este app:
+## 📁 Estrutura
 
-```powershell
-Push-Location "C:\\Users\\OSP\\Downloads\\osp-onboarding-portal"
-& "C:\\Program Files\\nodejs\\npm.cmd" run sync:team
-```
-
-Isso copia subpastas e arquivos (incluindo team.json) de
-`https://github.com/osp-group/marketing/tree/main/onboarding-portal/public/team` para `public/team`.
-
-### Caminhos customizados
-
-Você pode especificar origem/destino manualmente:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\\scripts\\sync-team.ps1 -Source "C:\\path\\to\\team" -Dest "C:\\Users\\OSP\\Downloads\\osp-onboarding-portal\\public\\team"
-```
-
-### Importar de "Fotos dos colaboradores" (local)
-
-Se houver uma pasta local com fotos por departamento, use o importador:
-
-```powershell
-Push-Location "C:\\Users\\OSP\\Downloads\\osp-onboarding-portal"
-& "C:\\Program Files\\nodejs\\npm.cmd" run sync:photos
-```
-
-O script busca JPG/PNG/WebP em `C:\\Users\\OSP\\Downloads\\Fotos dos colaboradores`, mapeia as pastas para chaves
-(Contábil → `DPT_Contabil`, Pessoal/DP → `DPT_Pessoal`, Fiscal/Tributário → `DPT_Fiscal`, Sucesso/Cliente/Relacionamento → `Sucesso_Do_Cliente`),
-copia para subpastas de [public/team](public/team) e gera [public/team/team.json](public/team/team.json).
-
-Você pode customizar origem/destino:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\\scripts\\import-team-photos.ps1 -Source "C:\\path\\to\\Fotos dos colaboradores" -Dest "C:\\Users\\OSP\\Downloads\\osp-onboarding-portal\\public\\team"
-```
-
-### Base remota (opcional)
-
-Para carregar os assets remotamente, defina `TEAM_BASE_URL` em [.env](.env):
+Este repositório contém o portal de onboarding na raiz:
 
 ```
-TEAM_BASE_URL=https://raw.githubusercontent.com/osp-group/marketing/main/onboarding-portal/public/team
+marketing/
+├── App.tsx, index.tsx       # Portal de onboarding (React + Vite)
+├── public/                  # Assets públicos (fotos, logos, team)
+├── docs/                    # Documentação OSP
+├── scripts/                 # Scripts de automação
+├── INSTRUÇÕES_SIMPLES.md    # Guia fácil para atualizar portal
+├── ABRIR_PORTAL.html        # Acesso rápido ao webapp
+└── config.json              # Configuração do novo colaborador
 ```
 
-Reinicie `npm run dev`. O app buscará `TEAM_BASE_URL/team.json` e imagens a partir dessa base.
+## 🚀 Portal de Onboarding
+
+O portal de onboarding é uma aplicação React para receber novos colaboradores.
+
+**Acesso rápido:**
+- 🌐 **[Abrir Portal](ABRIR_PORTAL.html)** - Clique aqui para acessar o webapp
+- 📖 [Instruções Simples](INSTRUÇÕES_SIMPLES.md) - Como atualizar fotos e informações
+- 🔧 [Guia Completo](COMO_ATUALIZAR.md) - Documentação técnica completa
+
+**Para rodar localmente:**
+```bash
+npm install
+npm run dev
+```
+
+Portal disponível em: http://localhost:3000
+
+## � Gerenciamento de Fotos da Equipe (RH)
+
+### Como Atualizar Fotos e Membros no Portal de Onboarding
+
+Esta seção é para a equipe de RH gerenciar as fotos dos colaboradores no portal de onboarding.
+
+#### 📁 Estrutura de Pastas
+
+As fotos da equipe ficam organizadas por departamento:
+
+```
+public/team/
+├── DPT_Contabil/          # Departamento Contábil
+├── DPT_Fiscal/            # Departamento Fiscal
+├── DPT_Pessoal/           # Departamento Pessoal
+├── Sucesso_Do_Cliente/    # Sucesso do Cliente
+├── Relacionamento_ADM/    # Administrativo
+├── RH/                    # Recursos Humanos
+├── Comercial/             # Comercial
+├── Marketing/             # Marketing
+└── Moby/                  # Moby
+```
+
+#### ✅ Como Adicionar ou Atualizar Fotos
+
+**Passo 1: Preparar a Foto**
+- ✔️ Formato: JPG, JPEG ou PNG
+- ✔️ Tamanho recomendado: 400x600 pixels (proporção retrato)
+- ✔️ Fundo claro ou neutro (preferencialmente)
+- ✔️ Boa iluminação e qualidade
+
+**Passo 2: Nomear o Arquivo**
+
+O nome do arquivo deve seguir este padrão:
+```
+NomeDaPessoa_NomeDoDepartamento.png
+```
+
+**Exemplos:**
+```
+Rafaela_Gestora_DPT_Fiscal.png
+Maria_DPT_Contabil.png
+João_Sucesso_Do_Cliente.png
+Ana_Marketing.png
+```
+
+⚠️ **Importante:**
+- Use **apenas letras** (sem acentos)
+- Separe as palavras com **underline (_)**
+- Não use espaços
+- A extensão pode ser `.png`, `.jpg` ou `.jpeg`
+
+**Passo 3: Colocar na Pasta Correta**
+
+1. Abra a pasta do projeto: `osp-onboarding-portal`
+2. Navegue até: `public/team/`
+3. Escolha a pasta do departamento correspondente
+4. Cole a foto lá dentro
+
+**Passo 4: Atualizar o Sistema**
+
+Se for uma **foto nova** (novo colaborador):
+- A foto aparecerá automaticamente no portal
+- Basta reiniciar o servidor de desenvolvimento
+
+Se for **atualização de foto existente**:
+- Substitua o arquivo antigo pelo novo (mesmo nome)
+- Se mudar o nome, atualize também no arquivo `constants.tsx`
+
+#### 🔄 Como Atualizar Informações de Gestores
+
+Para atualizar a foto ou informação de um gestor de departamento:
+
+1. Abra o arquivo: `constants.tsx`
+2. Procure a seção `DEPARTMENTS`
+3. Encontre o departamento desejado
+4. Atualize a linha `image:` com o caminho da nova foto
+
+**Exemplo:**
+```typescript
+{
+  name: 'Fiscal e Tributário',
+  manager: {
+    name: 'Rafaela Oliveira',
+    role: 'Gestora Fiscal',
+    image: '/team/DPT_Fiscal/Rafaela_Gestora_DPT_Fiscal.png', // ← Atualizar aqui
+    email: 'rafaela@osp.com.br'
+  }
+}
+```
+
+#### 🆕 Como Adicionar um Novo Colaborador
+
+1. **Tire/receba a foto** seguindo as diretrizes acima
+2. **Renomeie** conforme o padrão
+3. **Cole** na pasta do departamento correto em `public/team/`
+4. **Pronto!** O sistema detecta automaticamente
+
+#### ❓ Dúvidas Comuns
+
+**P: A foto não aparece no portal**
+R: Verifique se:
+- O arquivo está na pasta correta (`public/team/DEPARTAMENTO/`)
+- O nome do arquivo está correto (sem espaços, com underline)
+- O servidor foi reiniciado após adicionar a foto
+
+**P: Como remover um colaborador?**
+R: Delete a foto da pasta correspondente e reinicie o servidor
+
+**P: Posso usar fotos em outros formatos?**
+R: Sim, `.jpg`, `.jpeg` e `.png` funcionam. Evite formatos como `.gif` ou `.webp`
+
+**P: Como atualizar o nome de exibição?**
+R: O nome é extraído automaticamente do nome do arquivo. Para personalizar, edite o arquivo `constants.tsx`
+
+#### 📞 Precisa de Ajuda?
+
+Entre em contato com:
+- **Desenvolvimento:** Leo Pagotto
+- **Marketing:** Guilherme Pagotto
+- **Email:** mkt@osp.com.br
+
+## �🔗 Links Úteis
+
+- **Site OSP:** [ospcontabilidade.com.br](https://ospcontabilidade.com.br)
+- **Dashboard Admin:** [osp-website-2026.web.app/admin](https://osp-website-2026.web.app/admin)
+- **Repo Principal:** [osp-group/contabilidade](https://github.com/osp-group/contabilidade)
+
+## 🚀 Como Usar
+
+### Criar uma nova tarefa
+
+```bash
+gh issue create --repo osp-group/marketing --title "Título da tarefa" --body "Descrição"
+```
+
+### Ver tarefas por pessoa
+
+```bash
+# Tarefas do Guilherme
+gh issue list --repo osp-group/marketing --label "guilherme"
+
+# Tarefas do Leo
+gh issue list --repo osp-group/marketing --label "leo"
+
+# Tarefas do Gigi
+gh issue list --repo osp-group/marketing --label "gigi"
+```
+
+### Ver tarefas por prioridade
+
+```bash
+gh issue list --repo osp-group/marketing --label "P1"
+```
+
+## 📞 Contato
+
+Para dúvidas sobre este repositório, abra uma issue ou entre em contato com a equipe.
+
+- **Marketing:** mkt@osp.com.br
+- **RH:** Mariely@osp.com.br
 
 ---
 
-OSP Contabilidade © 2026
+**OSP Contabilidade** © 2026
