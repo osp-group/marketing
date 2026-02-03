@@ -57,7 +57,7 @@ marketing/
 O portal de onboarding é uma aplicação React para receber novos colaboradores.
 
 **Acesso rápido:**
-- 🌐 **[Abrir Portal](ABRIR_PORTAL.html)** - Clique aqui para acessar o webapp
+- 🌐 **[Abrir Portal](https://osp-group.github.io/marketing/)** - Clique aqui para acessar o webapp online
 - 📖 [Instruções Simples](INSTRUÇÕES_SIMPLES.md) - Como atualizar fotos e informações
 - 🔧 [Guia Completo](COMO_ATUALIZAR.md) - Documentação técnica completa
 
