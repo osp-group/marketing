@@ -19,6 +19,16 @@ h2 {
   animation: slowBlink 3.5s ease-in-out infinite;
 }
 
+/* Shimmer animation for welcome card */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 /* Responsive cropping for hero background */
 .hero-bg {
   background-size: cover;

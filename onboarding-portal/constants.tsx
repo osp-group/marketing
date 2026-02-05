@@ -118,7 +118,7 @@ export const DEPARTMENTS: Department[] = [
     manager: {
       name: 'Rafaela Oliveira',
       role: 'Gestora Fiscal',
-      image: getAssetUrl('/team/DPT_Fiscal/Rafaela_DPT_Fiscal.png'),
+      image: getAssetUrl('/team/DPT_Fiscal/Rafaela_Gestora_DPT_Fiscal.png'),
       email: 'rafaela@osp.com.br'
     },
     members: [
@@ -147,7 +147,7 @@ export const DEPARTMENTS: Department[] = [
     color: 'rose',
     manager: {
       name: 'Polyane Fonseca',
-      role: 'Gestora de CX',
+      role: 'Gestora S.C',
       image: getAssetUrl('/team/Sucesso_Do_Cliente/Polyane_Sucesso_Do_Cliente.jpeg'),
       email: 'polyane@osp.com.br'
     },
@@ -163,7 +163,7 @@ export const DEPARTMENTS: Department[] = [
       name: 'Larissa',
       role: 'Supervisora',
       image: getAssetUrl('/team/Relacionamento_ADM/Larissa_Supervisora_Relacionamento_ADM.png'),
-      email: 'administrativo@osp.com.br'
+      email: 'larissa@osp.com.br'
     },
     members: [
       { name: 'Relacionamento ADM', role: 'Atendimento Interno' },
@@ -177,7 +177,7 @@ export const DEPARTMENTS: Department[] = [
       name: 'Paulo',
       role: 'Coord Gente e Gestão',
       image: getAssetUrl('/team/Moby/Paulo_Coord Gente e Gestão_Moby.jpeg'),
-      email: 'moby@osp.com.br'
+      email: 'paulo.ricardo@osp.com.br'
     },
     members: [
       { name: 'Gestão de Pessoas', role: 'RH Moby' },
@@ -189,9 +189,9 @@ export const DEPARTMENTS: Department[] = [
     color: 'amber',
     manager: {
       name: 'Giovanne',
-      role: 'Coordenador de Marketing',
+      role: 'Assistente de Marketing',
       image: getAssetUrl('/team/Marketing/Giovanne_assistete_Marketing.jpeg'),
-      email: 'marketing@osp.com.br'
+      email: 'mkt@osp.com.br'
     },
     members: [
       { name: 'Conteúdo', role: 'Branding e Comunicação' },
@@ -203,9 +203,9 @@ export const DEPARTMENTS: Department[] = [
     color: 'cyan',
     manager: {
       name: 'Juliana',
-      role: 'Coordenadora',
+      role: 'Assistente de Vendas',
       image: getAssetUrl('/team/Comercial/Juliana_Vendas.jpeg'),
-      email: 'comercial@osp.com.br'
+      email: 'juliana.casciatori@osp.com.br'
     },
     members: [
       { name: 'Vendas', role: 'Prospecção e Relacionamento' },
@@ -220,7 +220,7 @@ export const DEPARTMENTS: Department[] = [
       name: 'Mariely',
       role: 'Coordenadora de RH',
       image: getAssetUrl('/team/RH/Mariely_RH.jpeg'),
-      email: 'rh@osp.com.br'
+      email: 'Mariely@osp.com.br'
     },
     members: [
       { name: 'Recrutamento e Seleção', role: 'Aquisição de Talentos' },

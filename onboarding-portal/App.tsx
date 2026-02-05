@@ -312,6 +312,14 @@ const App: React.FC = () => {
         <section id="home" className="relative min-h-[85vh] md:min-h-screen bg-[#002147] text-white flex items-center">
           {/* Corporate office background */}
           <div className="absolute inset-0">
+            {/* Edificio OSP with opacity */}
+            <div 
+              className="absolute inset-0 bg-cover bg-center"
+              style={{
+                backgroundImage: `url(${getAssetUrl("/assets/hero/edificio-osp.jpg")})`,
+                opacity: 0.3
+              }}
+            ></div>
             <div
               className="absolute inset-0 hero-bg"
               style={{
@@ -343,19 +351,37 @@ const App: React.FC = () => {
               </div>
 
               {/* Right: Welcome card */}
-              <div className="bg-white text-[#002147] rounded-3xl shadow-2xl p-8 flex flex-col items-center">
-                <h3 className="text-2xl font-black mb-6 text-center">Seja bem-vindo</h3>
-                <div className="w-28 h-28 rounded-full overflow-hidden ring-8 ring-slate-100 mb-4">
-                  {welcomePhoto ? (
-                    <img src={welcomePhoto} alt={welcomeName || 'Colaborador(a)'} className="w-full h-full object-cover" />
-                  ) : (
-                    <img src="https://picsum.photos/200/200?random=21" alt="Foto" className="w-full h-full object-cover" />
-                  )}
+              <div className="relative bg-gradient-to-br from-[#002147] via-[#003366] to-[#004488] text-white rounded-3xl shadow-2xl p-10 flex flex-col items-center overflow-hidden group hover:shadow-[0_20px_60px_rgba(0,33,71,0.4)] transition-all duration-500">
+                {/* Animated background elements */}
+                <div className="absolute top-0 right-0 w-40 h-40 bg-white opacity-5 rounded-full blur-3xl animate-pulse"></div>
+                <div className="absolute bottom-0 left-0 w-32 h-32 bg-blue-300 opacity-10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+                
+                {/* Decorative icon */}
+                <div className="mb-6 relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full blur-xl opacity-50 animate-pulse"></div>
+                  <div className="relative bg-white/10 backdrop-blur-sm p-4 rounded-full ring-2 ring-white/30 group-hover:ring-white/50 transition-all duration-300">
+                    <HeartHandshake className="w-12 h-12 text-white animate-bounce" style={{ animationDuration: '2s' }} />
+                  </div>
                 </div>
-                <p className="text-xl font-bold mb-4">{welcomeName || 'Colaborador(a)'}</p>
-                <p className="text-sm text-gray-600 text-center max-w-[260px]">
+                
+                <h3 className="text-3xl font-black mb-4 text-center bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent animate-pulse" style={{ animationDuration: '3s' }}>
+                  Seja bem-vindo!
+                </h3>
+                
+                {welcomeName && (
+                  <div className="mb-6 text-center transform hover:scale-105 transition-transform duration-300">
+                    <p className="text-2xl font-bold text-cyan-300 drop-shadow-lg">{welcomeName}</p>
+                  </div>
+                )}
+                
+                <p className="text-base text-blue-100 text-center max-w-[280px] leading-relaxed mb-6">
                   Você já faz parte do time. Estamos muito felizes de te ter aqui. Comece sua jornada conosco.
                 </p>
+                
+                {/* Static decorative bar */}
+                <div className="w-full bg-white/20 rounded-full h-1.5 overflow-hidden">
+                  <div className="h-full bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 rounded-full" style={{ width: '100%' }}></div>
+                </div>
               </div>
             </div>
           </div>
@@ -367,7 +393,7 @@ const App: React.FC = () => {
           <div className="container mx-auto px-6 md:px-12">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
-                 <img src="https://images.unsplash.com/photo-1557426282-285758c717a1?auto=format&fit=crop&q=80&w=1000" alt="Office Life" className="w-full h-64 object-cover md:h-[500px]" />
+                 <img src={getAssetUrl("/assets/sobre/sobre-nos.png")} alt="Sobre a OSP" className="w-full h-64 object-cover md:h-[500px]" style={{ objectPosition: 'center 20%' }} />
               </div>
               <div className="space-y-8">
                 <div className="flex items-center space-x-4">
