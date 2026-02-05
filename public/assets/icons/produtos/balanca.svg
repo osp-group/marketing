@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Balança da Justiça -->
+  <!-- Base -->
+  <rect x="20" y="54" width="24" height="3" rx="1.5" fill="#002147"/>
+  
+  <!-- Haste vertical central -->
+  <rect x="30.5" y="12" width="3" height="42" fill="#002147"/>
+  
+  <!-- Barra horizontal -->
+  <rect x="12" y="16" width="40" height="2.5" rx="1.25" fill="#002147"/>
+  
+  <!-- Prato esquerdo -->
+  <line x1="16" y1="18" x2="12" y2="28" stroke="#002147" stroke-width="1.5"/>
+  <line x1="16" y1="18" x2="20" y2="28" stroke="#002147" stroke-width="1.5"/>
+  <path d="M 8 28 L 16 26 L 24 28 L 22 32 L 10 32 Z" stroke="#002147" stroke-width="2" fill="none"/>
+  
+  <!-- Prato direito -->
+  <line x1="48" y1="18" x2="44" y2="28" stroke="#002147" stroke-width="1.5"/>
+  <line x1="48" y1="18" x2="52" y2="28" stroke="#002147" stroke-width="1.5"/>
+  <path d="M 40 28 L 48 26 L 56 28 L 54 32 L 42 32 Z" stroke="#002147" stroke-width="2" fill="none"/>
+  
+  <!-- Topo decorativo -->
+  <circle cx="32" cy="12" r="3" stroke="#002147" stroke-width="2" fill="none"/>
+  <circle cx="32" cy="12" r="1.5" fill="#002147"/>
+</svg>

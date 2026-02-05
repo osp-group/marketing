@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- OSP360 - Ícone de Diagnóstico/Lupa com Gráfico -->
+  <circle cx="26" cy="26" r="16" stroke="#002147" stroke-width="2" fill="none"/>
+  <!-- Cabo da lupa -->
+  <line x1="38" y1="38" x2="50" y2="50" stroke="#002147" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Gráfico dentro da lupa -->
+  <line x1="18" y1="30" x2="22" y2="24" stroke="#002147" stroke-width="1.5"/>
+  <line x1="22" y1="24" x2="26" y2="20" stroke="#002147" stroke-width="1.5"/>
+  <line x1="26" y1="20" x2="30" y2="26" stroke="#002147" stroke-width="1.5"/>
+  <line x1="30" y1="26" x2="34" y2="22" stroke="#002147" stroke-width="1.5"/>
+  <!-- Pontos no gráfico -->
+  <circle cx="18" cy="30" r="2" fill="#002147"/>
+  <circle cx="22" cy="24" r="2" fill="#002147"/>
+  <circle cx="26" cy="20" r="2" fill="#002147"/>
+  <circle cx="30" cy="26" r="2" fill="#002147"/>
+  <circle cx="34" cy="22" r="2" fill="#002147"/>
+</svg>

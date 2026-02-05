@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Onboarding OSP</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #002147 0%, #1e3a8a 100%);
+            color: white;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: white;
+            color: #002147;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+        }
+        .instructions {
+            margin-top: 3rem;
+            padding: 1.5rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            text-align: left;
+        }
+        .instructions h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        .instructions ol {
+            margin-left: 1.5rem;
+        }
+        .instructions li {
+            margin-bottom: 0.5rem;
+        }
+        code {
+            background: rgba(0,0,0,0.3);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Portal de Onboarding OSP</h1>
+        <p>Bem-vindo ao sistema de onboarding da OSP Contabilidade</p>
+        
+        <a href="http://localhost:3000" class="btn" id="openPortal">Abrir Portal</a>
+        
+        <div class="instructions">
+            <h2>📋 Como Usar:</h2>
+            <ol>
+                <li>Certifique-se de que o servidor está rodando</li>
+                <li>Se não estiver, abra o PowerShell nesta pasta e execute:<br>
+                    <code>npm run dev</code>
+                </li>
+                <li>Clique no botão acima ou acesse:<br>
+                    <code>http://localhost:3000</code>
+                </li>
+            </ol>
+            <p style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.8;">
+                💡 Dica: Salve este arquivo nos favoritos para acesso rápido!
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('openPortal').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.open('http://localhost:3000', '_blank');
+            
+            // Tentar abrir em uma nova janela
+            setTimeout(() => {
+                alert('Se o portal não abriu automaticamente, certifique-se de que o servidor está rodando.\n\nExecute: npm run dev');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- REFORMA360 - Ícone de Reforma/Mudança -->
+  <circle cx="32" cy="32" r="24" stroke="#002147" stroke-width="2" fill="none"/>
+  <!-- Setas circulares indicando reforma/mudança -->
+  <path d="M 32 12 A 20 20 0 0 1 52 32" stroke="#002147" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M 52 32 A 20 20 0 0 1 32 52" stroke="#002147" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M 32 52 A 20 20 0 0 1 12 32" stroke="#002147" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Pontas de seta -->
+  <polygon points="48,28 52,32 48,36" fill="#002147"/>
+  <polygon points="28,48 32,52 36,48" fill="#002147"/>
+  <polygon points="16,36 12,32 16,28" fill="#002147"/>
+  <!-- Símbolo de mudança no centro -->
+  <path d="M 28 28 L 32 24 L 36 28" stroke="#002147" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M 36 36 L 32 40 L 28 36" stroke="#002147" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

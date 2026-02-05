@@ -108,7 +108,7 @@ export const DEPARTMENTS: Department[] = [
     manager: {
       name: 'Rafaela Oliveira',
       role: 'Gestora Fiscal',
-      image: '/team/DPT_Fiscal/Rafaela_DPT_Fiscal.png',
+      image: '/team/DPT_Fiscal/Rafaela_Gestora_DPT_Fiscal.png',
       email: 'rafaela@osp.com.br'
     },
     members: [

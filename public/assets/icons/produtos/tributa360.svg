@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- TRIBUTA360 - Ícone de Moedas/Impostos -->
+  <circle cx="28" cy="28" r="16" stroke="#002147" stroke-width="2" fill="none"/>
+  <circle cx="38" cy="36" r="16" stroke="#002147" stroke-width="2" fill="none"/>
+  <!-- Símbolo de porcentagem -->
+  <text x="24" y="34" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#002147">%</text>
+  <!-- Seta para baixo (redução) -->
+  <path d="M 48 20 L 48 28 L 44 24 M 48 28 L 52 24" stroke="#002147" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

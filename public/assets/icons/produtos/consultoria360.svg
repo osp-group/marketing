@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Consultoria360 - Ícone de Pessoas em Reunião -->
+  <circle cx="24" cy="20" r="8" stroke="#002147" stroke-width="2" fill="none"/>
+  <path d="M 12 44 Q 12 32 24 32 Q 36 32 36 44" stroke="#002147" stroke-width="2" fill="none"/>
+  
+  <circle cx="44" cy="24" r="6" stroke="#002147" stroke-width="2" fill="none"/>
+  <path d="M 36 48 Q 36 38 44 38 Q 52 38 52 48" stroke="#002147" stroke-width="2" fill="none"/>
+  
+  <!-- Mesa/Documento entre eles -->
+  <rect x="20" y="40" width="24" height="3" rx="1" fill="#002147"/>
+  
+  <!-- Círculo 360 ao redor -->
+  <path d="M 8 32 A 24 24 0 0 1 32 8" stroke="#002147" stroke-width="1.5" stroke-dasharray="3 3" fill="none"/>
+  <path d="M 32 56 A 24 24 0 0 1 8 32" stroke="#002147" stroke-width="1.5" stroke-dasharray="3 3" fill="none"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- FUNDAR360 - Ícone de Foguete/Startup -->
+  <path d="M 32 8 L 38 20 L 44 28 L 44 48 L 32 56 L 20 48 L 20 28 L 26 20 Z" stroke="#002147" stroke-width="2" fill="none"/>
+  <!-- Janela do foguete -->
+  <circle cx="32" cy="28" r="6" stroke="#002147" stroke-width="2" fill="none"/>
+  <!-- Aletas -->
+  <path d="M 20 40 L 12 48 L 20 48 Z" stroke="#002147" stroke-width="2" fill="none"/>
+  <path d="M 44 40 L 52 48 L 44 48 Z" stroke="#002147" stroke-width="2" fill="none"/>
+  <!-- Fogo/propulsão -->
+  <path d="M 26 56 Q 28 60 32 62 Q 36 60 38 56" stroke="#002147" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Estrelas ao redor -->
+  <path d="M 48 16 L 49 18 L 51 18 L 49.5 19.5 L 50 21 L 48 20 L 46 21 L 46.5 19.5 L 45 18 L 47 18 Z" fill="#002147"/>
+</svg>

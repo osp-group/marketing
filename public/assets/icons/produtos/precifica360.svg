@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- PRECIFICA360 - Ícone de Tag/Etiqueta de Preço -->
+  <path d="M 16 12 L 40 12 L 52 32 L 40 52 L 16 52 L 16 12 Z" stroke="#002147" stroke-width="2" fill="none"/>
+  <!-- Furo da etiqueta -->
+  <circle cx="22" cy="20" r="3" stroke="#002147" stroke-width="2" fill="white"/>
+  <!-- Símbolo de cifrão -->
+  <text x="24" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#002147">$</text>
+  <!-- Seta de crescimento -->
+  <path d="M 36 38 L 42 28 L 48 34" stroke="#002147" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

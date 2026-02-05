@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Coin Cash - Ícone de Moedas/Dinheiro -->
+  <!-- Moeda 1 (fundo) -->
+  <circle cx="24" cy="26" r="14" stroke="#002147" stroke-width="2" fill="none"/>
+  <circle cx="24" cy="26" r="10" stroke="#002147" stroke-width="1.5" stroke-dasharray="2 2" fill="none"/>
+  <text x="20" y="32" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#002147">$</text>
+  
+  <!-- Moeda 2 (frente) -->
+  <circle cx="40" cy="38" r="14" stroke="#002147" stroke-width="2" fill="white"/>
+  <circle cx="40" cy="38" r="10" stroke="#002147" stroke-width="1.5" stroke-dasharray="2 2" fill="none"/>
+  <text x="36" y="44" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#002147">$</text>
+  
+  <!-- Notas de dinheiro ao fundo -->
+  <rect x="10" y="12" width="20" height="12" rx="1" stroke="#002147" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <line x1="14" y1="15" x2="26" y2="15" stroke="#002147" stroke-width="1" opacity="0.6"/>
+  <line x1="14" y1="18" x2="26" y2="18" stroke="#002147" stroke-width="1" opacity="0.6"/>
+  <line x1="14" y1="21" x2="26" y2="21" stroke="#002147" stroke-width="1" opacity="0.6"/>
+</svg>

@@ -331,6 +331,14 @@ const App: React.FC = () => {
         <section id="home" className="relative min-h-[85vh] md:min-h-screen bg-[#002147] text-white flex items-center">
           {/* Corporate office background */}
           <div className="absolute inset-0">
+            {/* Imagem do edifício com transparência */}
+            <div 
+              className="absolute inset-0 hero-bg"
+              style={{
+                backgroundImage: 'url(/assets/hero/edificio.jpg)',
+                opacity: 0.3
+              }}
+            ></div>
             <div
               className="absolute inset-0 hero-bg"
               style={{
@@ -356,7 +364,7 @@ const App: React.FC = () => {
                 {/* Emblem aligned to left */}
                 <div className="hidden md:flex items-center gap-3 mt-6">
                   <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-lg">
-                    <img src="/assets/logo/Logo OSP Azul.png" alt="OSP" className="w-10 h-10 object-contain" />
+                    <img src="/assets/logo/Logo OSP Azul.png" alt="OSP" className="w-20 h-20 object-contain p-1" />
                   </div>
                 </div>
               </div>
@@ -644,7 +652,12 @@ const App: React.FC = () => {
                             <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5">
                               {sortedPhotos.map((p, i) => (
                                 <div key={`${p.name}-${i}`} className="group relative bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden w-[120px] h-[200px] transform transition-all duration-200 ease-out hover:shadow-lg hover:ring-2 hover:ring-[#002147]/50 hover:scale-[1.03] hover:z-50">
-                                  <img src={buildPhotoUrl(p)} alt={p.name} className="absolute inset-0 w-full h-full object-cover" />
+                                  <img 
+                                    src={buildPhotoUrl(p)} 
+                                    alt={p.name} 
+                                    className="absolute inset-0 w-full h-full object-cover" 
+                                    style={p.name.includes('Rafaela') ? { objectPosition: 'center 30%' } : {}}
+                                  />
                                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-100"></div>
                                   <div className="absolute bottom-0 left-0 right-0 text-white p-3">
                                     <p className="text-sm font-bold leading-tight mb-0.5">{p.name}</p>

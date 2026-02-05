@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ícones dos Produtos OSP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #002147 0%, #1e3a8a 100%);
+            color: #333;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #002147;
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 3rem;
+            font-size: 1.2rem;
+        }
+        
+        .section-title {
+            color: #002147;
+            margin: 3rem 0 1.5rem 0;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #002147;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section-title:first-of-type {
+            margin-top: 0;
+        }
+        
+        .icons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .icon-card {
+            background: #F9FAFB;
+            border: 2px solid #E5E7EB;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .icon-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,33,71,0.15);
+            border-color: #002147;
+        }
+        
+        .icon-wrapper {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 12px;
+            border: 2px solid #E5E7EB;
+        }
+        
+        .icon-card:hover .icon-wrapper {
+            background: #002147;
+        }
+        
+        .icon-card:hover .icon-wrapper img {
+            filter: brightness(0) invert(1);
+        }
+        
+        .icon-card img {
+            width: 64px;
+            height: 64px;
+            transition: filter 0.3s ease;
+        }
+        
+        .icon-name {
+            font-weight: bold;
+            color: #002147;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .icon-description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        .download-btn {
+            background: #002147;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            background: #1e3a8a;
+        }
+        
+        .info-box {
+            background: #EFF6FF;
+            border-left: 4px solid #002147;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .info-box h3 {
+            color: #002147;
+            margin-bottom: 0.5rem;
+        }
+        
+        .info-box p {
+            color: #374151;
+            line-height: 1.6;
+        }
+        
+        .color-swatch {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            vertical-align: middle;
+            margin: 0 0.5rem;
+            border: 1px solid #ccc;
+        }
+        
+        footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid #E5E7EB;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Ícones dos Produtos OSP</h1>
+        <p class="subtitle">Biblioteca completa de ícones SVG das soluções OSP Contabilidade</p>
+        
+        <div class="info-box">
+            <h3>📦 Como usar estes ícones</h3>
+            <p>
+                Todos os ícones estão em formato SVG (vetorial) e podem ser redimensionados sem perda de qualidade.
+                Clique no botão "Download" de cada ícone ou acesse a pasta <code>public/assets/icons/produtos/</code> 
+                para pegar todos os arquivos. Cor padrão: 
+                <span class="color-swatch" style="background: #002147;"></span> #002147 (Azul OSP)
+            </p>
+        </div>
+
+        <h2 class="section-title">Contabilidade e Fiscal</h2>
+        <div class="icons-grid">
+            <div class="icon-card" onclick="downloadIcon('bpo-contabil.svg')">
+                <div class="icon-wrapper">
+                    <img src="bpo-contabil.svg" alt="BPO Contábil">
+                </div>
+                <div class="icon-name">BPO Contábil</div>
+                <div class="icon-description">Documento com gráfico de barras - BPO mensal completo</div>
+                <button class="download-btn" onclick="event.stopPropagation(); downloadIcon('bpo-contabil.svg')">Download SVG</button>
+            </div>
+            
+            <div class="icon-card" onclick="downloadIcon('bpo-financeiro.svg')">
+                <div class="icon-wrapper">
+                    <img src="bpo-financeiro.svg" alt="BPO Financeiro">
+                </div>
+                <div class="icon-name">BPO Financeiro</div>
+                <div class="icon-description">Calculadora - Terceirização financeira</div>
+                <button class="download-btn" onclick="event.stopPropagation(); downloadIcon('bpo-financeiro.svg')">Download SVG</button>
+            </div>
+        </div>
+
+        <h2 class="section-title">Soluções 360</h2>
+        <div class="icons-grid">
+            <div class="icon-card" onclick="downloadIcon('reforma360.svg')">
+                <div class="icon-wrapper">
+                    <img src="reforma360.svg" alt="REFORMA360">
+                </div>
+                <div class="icon-name">REFORMA360</div>
+                <div class="icon-description">Setas de mudança - Reforma Tributária</div>
+                <button class="download-btn" onclick="event.stopPropagation(); downloadIcon('reforma360.svg')">Download SVG</button>
+            </div>
+            
+            <div class="icon-card" onclick="downloadIcon('tributa360.svg')">
+                <div class="icon-wrapper">
+                    <img src="tributa360.svg" alt="TRIBUTA360">
+                </div>
+                <div class="icon-name">TRIBUTA360</div>
+                <div class="icon-description">Moedas com % - Planejamento tributário</div>
+                <button class="download-btn" onclick="event.stopPropagation(); downloadIcon('tributa360.svg')">Download SVG</button>
+            </div>
+            
+            <div class="icon-card" onclick="downloadIcon('holding360.svg')">
+                <div class="icon-wrapper">
+                    <img src="holding360.svg" alt="HOLDING360">
+                </div>
+                <div class="icon-name">HOLDING360</div>
+                <div class="icon-description">Guarda-chuva - Estrutura patrimonial</div>
+                <button class="download-btn" onclick="event.stopPropagation(); downloadIcon('holding360.svg')">Download SVG</button>
+            </div>
+            
+            <div class="icon-card" onclick="downloadIcon('precifica360.svg')">
+                <div class="icon-wrapper">
+                    <img src="precifica360.svg" alt="PRECIFICA360">
+                </div>
+                <div class="icon-name">PRECIFICA360</div>
+                <div class="icon-description">Etiqueta de preço - Análise de margem</div>
+                <button class="download-btn" onclick="event.stopPropagation(); downloadIcon('precifica360.svg')">Download SVG</button>
+            </div>
+            
+            <div class="icon-card" onclick="downloadIcon('osp360.svg')">
+                <div class="icon-wrapper">
+                    <img src="osp360.svg" alt="OSP360">
+                </div>
+                <div class="icon-name">OSP360</div>
+                <div class="icon-description">Lupa com gráfico - Diagnóstico completo</div>
+                <button class="download-btn" onclick="event.stopPropagation(); downloadIcon('osp360.svg')">Download SVG</button>
+            </div>
+            
+            <div class="icon-card" onclick="downloadIcon('gestao360.svg')">
+                <div class="icon-wrapper">
+                    <img src="gestao360.svg" alt="GESTÃO360">
+                </div>
+                <div class="icon-name">GESTÃO360</div>
+                <div class="icon-description">Dashboard - CFO as a Service</div>
+                <button class="download-btn" onclick="event.stopPropagation(); downloadIcon('gestao360.svg')">Download SVG</button>
+            </div>
+            
+            <div class="icon-card" onclick="downloadIcon('fundar360.svg')">
+                <div class="icon-wrapper">
+                    <img src="fundar360.svg" alt="FUNDAR360">
+                </div>
+                <div class="icon-name">FUNDAR360</div>
+                <div class="icon-description">Foguete - Estruturação de negócios</div>
+                <button class="download-btn" onclick="event.stopPropagation(); downloadIcon('fundar360.svg')">Download SVG</button>
+            </div>
+        </div>
+
+        <h2 class="section-title">Consultoria e Educação</h2>
+        <div class="icons-grid">
+            <div class="icon-card" onclick="downloadIcon('consultoria360.svg')">
+                <div class="icon-wrapper">
+                    <img src="consultoria360.svg" alt="Consultoria360">
+                </div>
+                <div class="icon-name">Consultoria360</div>
+                <div class="icon-description">Pessoas em reunião - Squad dedicado</div>
+                <button class="download-btn" onclick="event.stopPropagation(); downloadIcon('consultoria360.svg')">Download SVG</button>
+            </div>
+            
+            <div class="icon-card" onclick="downloadIcon('educacao.svg')">
+                <div class="icon-wrapper">
+                    <img src="educacao.svg" alt="OSP Educação">
+                </div>
+                <div class="icon-name">OSP Educação</div>
+                <div class="icon-description">Capelo e livro - Capacitação</div>
+                <button class="download-btn" onclick="event.stopPropagation(); downloadIcon('educacao.svg')">Download SVG</button>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h3>✨ Especificações Técnicas</h3>
+            <p>
+                <strong>Formato:</strong> SVG (Scalable Vector Graphics)<br>
+                <strong>Tamanho:</strong> 64x64px (viewBox padrão)<br>
+                <strong>Cor:</strong> #002147 (Azul OSP)<br>
+                <strong>Stroke:</strong> 2px (padrão)<br>
+                <strong>Compatível com:</strong> Web, Figma, Illustrator, Word, PowerPoint, PDF
+            </p>
+        </div>
+
+        <footer>
+            <p><strong>OSP Contabilidade</strong> © 2026</p>
+            <p><em>Inteligência contábil para decisões que transformam negócios</em></p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">
+                📞 (19) 99321-6091 | 📧 atendimento@osp.com.br | 🌐 ospcontabilidade.com.br
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        function downloadIcon(filename) {
+            const link = document.createElement('a');
+            link.href = filename;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
