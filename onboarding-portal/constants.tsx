@@ -1,5 +1,6 @@
 
 import { ValueItem, Technology, Employee, Department, OnboardingTask } from './types';
+import { getAssetUrl } from './utils';
 
 export const COLORS = {
   primary: '#002147',
@@ -40,38 +41,38 @@ export const ONBOARDING_TASKS: OnboardingTask[] = [
 ];
 
 export const TECHNOLOGIES: Technology[] = [
-  { name: 'Google Workspace', description: 'Multi-ferramentas do Google', logo: '/assets/logo/tech/google woekspace Logo.png' },
-  { name: 'Gestta', description: 'Plataforma de gestão contábil', logo: '/assets/logo/tech/gestta logo.png' },
-  { name: 'Onvio', description: 'Documentos e informações trabalhistas', logo: '/assets/logo/tech/Onvio logo.png' },
-  { name: 'Bradial Telecom', description: 'Sistema de telefonia empresarial', logo: '/assets/logo/tech/BradialTelecom logo.png' }
+  { name: 'Google Workspace', description: 'Multi-ferramentas do Google', logo: getAssetUrl('/assets/logo/tech/google woekspace Logo.png') },
+  { name: 'Gestta', description: 'Plataforma de gestão contábil', logo: getAssetUrl('/assets/logo/tech/gestta logo.png') },
+  { name: 'Onvio', description: 'Documentos e informações trabalhistas', logo: getAssetUrl('/assets/logo/tech/Onvio logo.png') },
+  { name: 'Bradial Telecom', description: 'Sistema de telefonia empresarial', logo: getAssetUrl('/assets/logo/tech/BradialTelecom logo.png') }
 ];
 
 // Logos de clientes (empresas que confiam na OSP) - selecionados para melhor contraste
 export const CLIENT_LOGOS: string[] = [
-  '/team/Misc/bigsystemlogo.png',
-  '/team/Misc/cooperfer_cooperativa_logo.jpg',
-  '/team/Misc/mosyle_logo.jpg',
-  '/team/Misc/everseek_logo.jpg',
-  '/team/Misc/gruposuprema_logo.jpg',
-  '/team/Misc/menin_engenharia_logo.jpg',
-  '/team/Misc/logo_global_moldes.png',
-  '/team/Misc/logoCrisabel.png',
-  '/team/Misc/wortex_logoFB.png',
-  '/team/Misc/greenexta.jpg',
-  '/team/Misc/AccervoIndustria.jpg',
-  '/team/Misc/acervo logo png.png',
-  '/team/Misc/logo-inoxbrito.png',
-  '/team/Misc/herrlog-logo.png',
-  '/team/Misc/logo-tubesteel.jpg',
-  '/team/Misc/casapapel-logo.png',
-  '/team/Misc/Cooperfer-Ferramentaria-600px_Grenn-Bkg-Novo.png',
-  '/team/Misc/UNILOTUS DISTRIBUIDORA DE ALIMENTOS LTDA.jpg',
-  '/team/Misc/MOSTEIRO DE SAO BENTO EM VINHEDO.jpg',
-  '/team/Misc/CENTRO DE CONVENCOES E EVENTOS SANTA GENEBRA LTDA..png',
-  '/team/Misc/images.jpg',
-  '/team/Misc/PROGT INDUSTRIAL LTDA.jpg',
-  '/team/Misc/SERVPRIME SERVICOS LTDA.jpg',
-  '/team/Misc/SIGIPACK INDUSTRIA E COMERCIO DE EMBALAGENS LTDA.jpg'
+  getAssetUrl('/team/Misc/bigsystemlogo.png'),
+  getAssetUrl('/team/Misc/cooperfer_cooperativa_logo.jpg'),
+  getAssetUrl('/team/Misc/mosyle_logo.jpg'),
+  getAssetUrl('/team/Misc/everseek_logo.jpg'),
+  getAssetUrl('/team/Misc/gruposuprema_logo.jpg'),
+  getAssetUrl('/team/Misc/menin_engenharia_logo.jpg'),
+  getAssetUrl('/team/Misc/logo_global_moldes.png'),
+  getAssetUrl('/team/Misc/logoCrisabel.png'),
+  getAssetUrl('/team/Misc/wortex_logoFB.png'),
+  getAssetUrl('/team/Misc/greenexta.jpg'),
+  getAssetUrl('/team/Misc/AccervoIndustria.jpg'),
+  getAssetUrl('/team/Misc/acervo logo png.png'),
+  getAssetUrl('/team/Misc/logo-inoxbrito.png'),
+  getAssetUrl('/team/Misc/herrlog-logo.png'),
+  getAssetUrl('/team/Misc/logo-tubesteel.jpg'),
+  getAssetUrl('/team/Misc/casapapel-logo.png'),
+  getAssetUrl('/team/Misc/Cooperfer-Ferramentaria-600px_Grenn-Bkg-Novo.png'),
+  getAssetUrl('/team/Misc/UNILOTUS DISTRIBUIDORA DE ALIMENTOS LTDA.jpg'),
+  getAssetUrl('/team/Misc/MOSTEIRO DE SAO BENTO EM VINHEDO.jpg'),
+  getAssetUrl('/team/Misc/CENTRO DE CONVENCOES E EVENTOS SANTA GENEBRA LTDA..png'),
+  getAssetUrl('/team/Misc/images.jpg'),
+  getAssetUrl('/team/Misc/PROGT INDUSTRIAL LTDA.jpg'),
+  getAssetUrl('/team/Misc/SERVPRIME SERVICOS LTDA.jpg'),
+  getAssetUrl('/team/Misc/SIGIPACK INDUSTRIA E COMERCIO DE EMBALAGENS LTDA.jpg')
 ];
 
 export const PARTNERS: Employee[] = [
@@ -79,19 +80,19 @@ export const PARTNERS: Employee[] = [
     name: 'Gervásio Souza',
     role: 'Sócio Fundador',
     description: 'Sócio-fundador com mais de 46 anos de experiência em contabilidade estratégica.',
-    image: '/assets/partners/Gervasio_Socio_Fundador.jpeg'
+    image: getAssetUrl('/assets/partners/Gervasio_Socio_Fundador.jpeg')
   },
   {
     name: 'Guilherme Pagotto',
     role: 'Sócio Empreendedor',
     description: 'Diretor Executivo da OSP. Advogado e contador com mais de 20 anos de experiência.',
-    image: '/assets/partners/Guilherme_Pagotto_Socio_Vendedor.jpeg'
+    image: getAssetUrl('/assets/partners/Guilherme_Pagotto_Socio_Vendedor.jpeg')
   },
   {
     name: 'Jonas Marinho',
     role: 'CEO',
     description: 'Diretor Executivo e liderança estratégica da OSP.',
-    image: '/assets/partners/Jonas_CEO.jpeg'
+    image: getAssetUrl('/assets/partners/Jonas_CEO.jpeg')
   }
 ];
 
@@ -102,7 +103,7 @@ export const DEPARTMENTS: Department[] = [
     manager: {
       name: 'Jéssica Gonçalves',
       role: 'Gestora Contábil',
-      image: '/team/DPT_Contabil/Jessica_DPT_Contabil.jpeg',
+      image: getAssetUrl('/team/DPT_Contabil/Jessica_DPT_Contabil.jpeg'),
       email: 'jessica@osp.com.br'
     },
     members: [
@@ -117,7 +118,7 @@ export const DEPARTMENTS: Department[] = [
     manager: {
       name: 'Rafaela Oliveira',
       role: 'Gestora Fiscal',
-      image: '/team/DPT_Fiscal/Rafaela_DPT_Fiscal.png',
+      image: getAssetUrl('/team/DPT_Fiscal/Rafaela_DPT_Fiscal.png'),
       email: 'rafaela@osp.com.br'
     },
     members: [
@@ -132,7 +133,7 @@ export const DEPARTMENTS: Department[] = [
     manager: {
       name: 'Raquel Lisboa',
       role: 'Gestora de DP',
-      image: '/team/DPT_Pessoal/Raquel_DPT_Pessoal.jpeg',
+      image: getAssetUrl('/team/DPT_Pessoal/Raquel_DPT_Pessoal.jpeg'),
       email: 'raquel@osp.com.br'
     },
     members: [
@@ -147,7 +148,7 @@ export const DEPARTMENTS: Department[] = [
     manager: {
       name: 'Polyane Fonseca',
       role: 'Gestora de CX',
-      image: '/team/Sucesso_Do_Cliente/Polyane_Sucesso_Do_Cliente.jpeg',
+      image: getAssetUrl('/team/Sucesso_Do_Cliente/Polyane_Sucesso_Do_Cliente.jpeg'),
       email: 'polyane@osp.com.br'
     },
     members: [
@@ -161,7 +162,7 @@ export const DEPARTMENTS: Department[] = [
     manager: {
       name: 'Larissa',
       role: 'Supervisora',
-      image: '/team/Relacionamento_ADM/Larissa_Supervisora_Relacionamento_ADM.png',
+      image: getAssetUrl('/team/Relacionamento_ADM/Larissa_Supervisora_Relacionamento_ADM.png'),
       email: 'administrativo@osp.com.br'
     },
     members: [
@@ -175,7 +176,7 @@ export const DEPARTMENTS: Department[] = [
     manager: {
       name: 'Paulo',
       role: 'Coord Gente e Gestão',
-      image: '/team/Moby/Paulo_Coord Gente e Gestão_Moby.jpeg',
+      image: getAssetUrl('/team/Moby/Paulo_Coord Gente e Gestão_Moby.jpeg'),
       email: 'moby@osp.com.br'
     },
     members: [
@@ -189,7 +190,7 @@ export const DEPARTMENTS: Department[] = [
     manager: {
       name: 'Giovanne',
       role: 'Coordenador de Marketing',
-      image: '/team/Marketing/Giovanne_assistete_Marketing.jpeg',
+      image: getAssetUrl('/team/Marketing/Giovanne_assistete_Marketing.jpeg'),
       email: 'marketing@osp.com.br'
     },
     members: [
@@ -203,7 +204,7 @@ export const DEPARTMENTS: Department[] = [
     manager: {
       name: 'Juliana',
       role: 'Coordenadora',
-      image: '/team/Comercial/Juliana_Vendas.jpeg',
+      image: getAssetUrl('/team/Comercial/Juliana_Vendas.jpeg'),
       email: 'comercial@osp.com.br'
     },
     members: [
@@ -218,7 +219,7 @@ export const DEPARTMENTS: Department[] = [
     manager: {
       name: 'Mariely',
       role: 'Coordenadora de RH',
-      image: '/team/RH/Mariely_RH.jpeg',
+      image: getAssetUrl('/team/RH/Mariely_RH.jpeg'),
       email: 'rh@osp.com.br'
     },
     members: [

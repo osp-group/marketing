@@ -22,6 +22,7 @@ import {
 } from 'lucide-react';
 import { VALUES, TECHNOLOGIES, PARTNERS, DEPARTMENTS, ONBOARDING_TASKS, COLORS, CLIENT_LOGOS } from './constants';
 import { TeamPhoto } from './types';
+import { getAssetUrl, BASE_URL } from './utils';
 
 const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -180,13 +181,13 @@ const App: React.FC = () => {
       } else {
         // Try local provided filenames with common extensions
         const candidates = [
-          '/assets/hero/osp-onboarding.webp',
-          '/assets/hero/osp-onboarding.jpg',
-          '/assets/hero/osp-onboarding.jpeg',
-          '/assets/hero/OSP_Image_Background.webp',
-          '/assets/hero/OSP_Image_Background.png',
-          '/assets/hero/OSP_Image_Background.jpg',
-          '/assets/hero/OSP_Image_Background.jpeg'
+          getAssetUrl('/assets/hero/osp-onboarding.webp'),
+          getAssetUrl('/assets/hero/osp-onboarding.jpg'),
+          getAssetUrl('/assets/hero/osp-onboarding.jpeg'),
+          getAssetUrl('/assets/hero/OSP_Image_Background.webp'),
+          getAssetUrl('/assets/hero/OSP_Image_Background.png'),
+          getAssetUrl('/assets/hero/OSP_Image_Background.jpg'),
+          getAssetUrl('/assets/hero/OSP_Image_Background.jpeg')
         ];
         (async () => {
           for (const u of candidates) {
@@ -195,7 +196,7 @@ const App: React.FC = () => {
               if (res.ok) { setHeroBg(u); return; }
             } catch {}
           }
-          setHeroBg('/assets/hero/osp-onboarding.webp');
+          setHeroBg(getAssetUrl('/assets/hero/osp-onboarding.webp'));
         })();
       }
     } catch {}
@@ -222,7 +223,7 @@ const App: React.FC = () => {
 
   const Logo = () => (
     <div className="flex items-center justify-center">
-      <img src="/assets/logo/Logotipo OSP branco.png" alt="OSP Logotipo" className="h-16 w-auto object-contain" />
+      <img src={getAssetUrl("/assets/logo/Logotipo OSP branco.png")} alt="OSP Logotipo" className="h-16 w-auto object-contain" />
     </div>
   );
 
@@ -266,7 +267,7 @@ const App: React.FC = () => {
       <header className="fixed top-0 left-0 right-0 bg-[#002147] text-white shadow z-50 lg:hidden">
         <div className="flex items-center justify-between px-4 h-14">
           <div className="flex items-center gap-2">
-            <img src="/assets/logo/Logo OSP branco.png" alt="OSP" className="w-7 h-7 object-contain" />
+            <img src={getAssetUrl("/assets/logo/Logo OSP branco.png")} alt="OSP" className="w-7 h-7 object-contain" />
             <span className="text-sm font-bold tracking-tight">OSP</span>
           </div>
           <button
@@ -336,7 +337,7 @@ const App: React.FC = () => {
                 {/* Emblem aligned to left */}
                 <div className="hidden md:flex items-center gap-3 mt-6">
                   <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-lg">
-                    <img src="/assets/logo/Logo OSP Azul.png" alt="OSP" className="w-10 h-10 object-contain" />
+                    <img src={getAssetUrl("/assets/logo/Logo OSP Azul.png")} alt="OSP" className="w-10 h-10 object-contain" />
                   </div>
                 </div>
               </div>
