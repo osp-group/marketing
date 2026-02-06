@@ -344,9 +344,7 @@ const App: React.FC = () => {
                 </div>
                 {/* Emblem aligned to left */}
                 <div className="hidden md:flex items-center gap-3 mt-6">
-                  <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-lg">
-                    <img src={getAssetUrl("/assets/logo/Logo OSP Azul.png")} alt="OSP" className="w-10 h-10 object-contain" />
-                  </div>
+                  <img src={getAssetUrl("/assets/logo/Logo OSP branco.png")} alt="OSP" className="w-20 h-20 object-contain drop-shadow-lg" />
                 </div>
               </div>
 
@@ -478,18 +476,13 @@ const App: React.FC = () => {
                 <div className="text-xl font-light uppercase tracking-tighter">CNPJ's Ativos</div>
               </div>
             </div>
-            {(() => {
-              const shuffled = [...CLIENT_LOGOS].sort(() => Math.random() - 0.5).slice(0, 12);
-              return (
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
-                  {shuffled.map((logo, i) => (
-                    <div key={`${logo}-${i}`} className="h-24 bg-slate-50 rounded-xl flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all border border-transparent hover:border-[#002147] shadow-sm">
-                      <img src={logo} alt="Cliente" className="max-h-full max-w-full object-contain" />
-                    </div>
-                  ))}
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+              {CLIENT_LOGOS.map((logo, i) => (
+                <div key={`${logo}-${i}`} className="h-24 bg-slate-50 rounded-xl flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all border border-transparent hover:border-[#002147] shadow-sm">
+                  <img src={logo} alt="Cliente" className="h-20 w-auto object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                 </div>
-              );
-            })()}
+              ))}
+            </div>
           </div>
         </section>
 

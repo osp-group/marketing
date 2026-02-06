@@ -47,32 +47,23 @@ export const TECHNOLOGIES: Technology[] = [
   { name: 'Bradial Telecom', description: 'Sistema de telefonia empresarial', logo: getAssetUrl('/assets/logo/tech/BradialTelecom logo.png') }
 ];
 
-// Logos de clientes (empresas que confiam na OSP) - selecionados para melhor contraste
+// Logos de clientes (empresas que confiam na OSP) - 15 logos selecionados fixos
 export const CLIENT_LOGOS: string[] = [
-  getAssetUrl('/team/Misc/bigsystemlogo.png'),
-  getAssetUrl('/team/Misc/cooperfer_cooperativa_logo.jpg'),
-  getAssetUrl('/team/Misc/mosyle_logo.jpg'),
-  getAssetUrl('/team/Misc/everseek_logo.jpg'),
-  getAssetUrl('/team/Misc/gruposuprema_logo.jpg'),
+  getAssetUrl('/team/Misc/logo-accervo-novo.png'),
+  getAssetUrl('/team/Misc/corpora-171-x-128-px-342-x-68-px.jpg'),
+  getAssetUrl('/team/Misc/logo-tubesteel.jpg'),
   getAssetUrl('/team/Misc/menin_engenharia_logo.jpg'),
-  getAssetUrl('/team/Misc/logo_global_moldes.png'),
-  getAssetUrl('/team/Misc/logoCrisabel.png'),
   getAssetUrl('/team/Misc/wortex_logoFB.png'),
   getAssetUrl('/team/Misc/greenexta.jpg'),
-  getAssetUrl('/team/Misc/AccervoIndustria.jpg'),
-  getAssetUrl('/team/Misc/acervo logo png.png'),
-  getAssetUrl('/team/Misc/logo-inoxbrito.png'),
-  getAssetUrl('/team/Misc/herrlog-logo.png'),
-  getAssetUrl('/team/Misc/logo-tubesteel.jpg'),
-  getAssetUrl('/team/Misc/casapapel-logo.png'),
-  getAssetUrl('/team/Misc/Cooperfer-Ferramentaria-600px_Grenn-Bkg-Novo.png'),
-  getAssetUrl('/team/Misc/UNILOTUS DISTRIBUIDORA DE ALIMENTOS LTDA.jpg'),
-  getAssetUrl('/team/Misc/MOSTEIRO DE SAO BENTO EM VINHEDO.jpg'),
+  getAssetUrl('/team/Misc/SIGIPACK INDUSTRIA E COMERCIO DE EMBALAGENS LTDA.jpg'),
+  getAssetUrl('/team/Misc/logo-automec-web.png'),
+  getAssetUrl('/team/Misc/avatar logo.png'),
+  getAssetUrl('/team/Misc/capsu.png'),
   getAssetUrl('/team/Misc/CENTRO DE CONVENCOES E EVENTOS SANTA GENEBRA LTDA..png'),
-  getAssetUrl('/team/Misc/images.jpg'),
-  getAssetUrl('/team/Misc/PROGT INDUSTRIAL LTDA.jpg'),
-  getAssetUrl('/team/Misc/SERVPRIME SERVICOS LTDA.jpg'),
-  getAssetUrl('/team/Misc/SIGIPACK INDUSTRIA E COMERCIO DE EMBALAGENS LTDA.jpg')
+  getAssetUrl('/team/Misc/Cooperfer-Ferramentaria-600px_Grenn-Bkg-Novo.png'),
+  getAssetUrl('/team/Misc/INNOVA32 LTDAlogo.png'),
+  getAssetUrl('/team/Misc/ENGETINS INSTALACOES INDUSTRIAIS LTDA.png'),
+  getAssetUrl('/team/Misc/everseek_logo.jpg')
 ];
 
 export const PARTNERS: Employee[] = [
@@ -118,7 +109,7 @@ export const DEPARTMENTS: Department[] = [
     manager: {
       name: 'Rafaela Oliveira',
       role: 'Gestora Fiscal',
-      image: getAssetUrl('/team/DPT_Fiscal/Rafaela_Gestora_DPT_Fiscal.png'),
+      image: getAssetUrl('/team/DPT_Fiscal/Rafaela_Gestora_DPT_Fiscal.jpeg'),
       email: 'rafaela@osp.com.br'
     },
     members: [
